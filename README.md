@@ -1,7 +1,7 @@
-# YourPCbuilds
+# PCbuilds
 
 
-YourPCbuilds is a made up company ....
+PCbuilds is a company ....
 
 ![Am-I-Responsive](assets/images/am-i-responsive.jpg)   < picture here>
 
