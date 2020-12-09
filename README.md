@@ -1,9 +1,9 @@
 # PCbuilds
 
 
-PCbuilds is a company ....
+ PCbuilds is a company ....
 
-![Am-I-Responsive](assets/images/am-i-responsive.jpg)   < picture here>
+![Am-I-Responsive](assets/images/am-i-responsive.jpg)     < picture here>
 
 
 ## Contents
@@ -33,6 +33,7 @@ PCbuilds is a company ....
 - [**Credits**](#credits)
 
 ---
+
 
 ## User Experience (UX)
 
