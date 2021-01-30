@@ -1,8 +1,7 @@
 *{
   padding: 0;
   margin: 0;
-  list-style: none;
-  box-sizing: border-box;
+  
 }
 
 body{
@@ -273,5 +272,37 @@ Linear gradient to add if
   line-height: 30px;
   font-weight: 400;
 }
+
+
+/* ------ Gallery section  ------ */
+
+.wrapper-gallery{
+  margin: 0 20vw;
+}
+
+#index-gallery {
+  display: grid;
+  /* With tamplates I will define a collums which i want to have - 4 1fr means we will have 4 collums */
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+  "img1 img2 img3 img4"
+  "img5 img6 img7 img7";
+}
+
+#index-gallery .gallery-img{
+  width: 100%;
+  /* decide height urself*/
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+
+
 
 
