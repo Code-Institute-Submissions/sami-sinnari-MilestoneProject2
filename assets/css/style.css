@@ -302,6 +302,42 @@ Linear gradient to add if
   cursor: pointer;
 }
 
+/* - Images  -*/
+
+#index-gallery h2 {
+  grid-area: gallery-h2;
+}
+
+#index-gallery .img1 {
+  grid-area: img1;
+  background-image: url("../images/img1.jpeg");
+}
+#index-gallery .img2 {
+  grid-area: img2;
+  background-image: url("../images/img2.jpeg");
+}
+#index-gallery .img3 {
+  grid-area: img3;
+  background-image: url("../images/img3.jpeg");
+}
+#index-gallery .img4 {
+  grid-area: img4;
+  background-image: url("../images/img4.jpeg");
+}
+#index-gallery .img5 {
+  grid-area: img5;
+  background-image: url("../images/img5.jpeg");
+}
+#index-gallery .img6 {
+  grid-area: img6;
+  background-image: url("../images/img6.jpeg");
+}
+#index-gallery .img7 {
+  grid-area: img7;
+  background-image: url("../images/img7.jpeg");
+}
+
+
 
 
 
