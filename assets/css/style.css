@@ -368,3 +368,52 @@ body{
   }
 }
 
+  /* ------ Contact section  ------ */
+  
+  .contact-section{
+    background: url(../images/contact-us.jpeg) no-repeat center;
+    background-size: cover;
+    padding: 50px 0;
+  }
+  .contact-section h1{
+    text-align: center;
+    color: #486581d7;
+  }
+  
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgba(72, 101, 129, 0.843);
+    padding: 20px 40px;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #378bdf;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    float: left;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
