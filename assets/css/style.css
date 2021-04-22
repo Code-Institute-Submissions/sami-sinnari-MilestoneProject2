@@ -348,3 +348,23 @@ body{
   background: rgba(0,0,0,0.45);
 }
 
+@media(min-width: 680px){
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+  .gallery-section{
+    padding-left: 250px;
+  }
+}
+
+@media(min-width: 1024px){
+  .gallery .image{
+    padding: 7px;
+    width: calc(100% / 3);
+  }
+
+  .gallery-section{
+    padding-left: 380px;
+  }
+}
+
