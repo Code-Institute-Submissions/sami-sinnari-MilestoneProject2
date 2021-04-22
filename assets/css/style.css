@@ -6,7 +6,6 @@
 
 body{
   font-family: "Dosis", sans-serif;
-  
 }
 
 
@@ -14,7 +13,7 @@ body{
 
 .nav-container{
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background:  /*linear-gradient(
       rgba(250, 250, 250, 0.993),
       rgba(162, 196, 240, 0.2),
@@ -29,9 +28,9 @@ body{
   height: 70%;
  /* background-color: #3d75eed5; */ 
   background: linear-gradient(
-    rgba(0, 83, 156, 0.89),
-      rgba(0, 83, 156, 0.801),
-      rgba(0, 83, 156, 0.705)
+    rgba(2, 93, 172, 0.952),
+      rgba(2, 76, 141, 0.801),
+      rgba(1, 72, 134, 0.705)
   );
   position: fixed;
   top: 0;
@@ -49,28 +48,7 @@ body{
   float: left;
 
 }
-/*.logo-container{
-  height: 100%;
-  display: block;
-  float: left;
-}
 
-.logo-container h1{
-  color: #00539cff;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 40px;
-  font-weight: 300;
-  padding: 20px;
-  padding-top: 40px;
-  font-family: 'Fredericka the Great', cursive;
-}
-
-.logo-container span{
-  font-weight: 700;
-}
-*/
 .close{
   right: 0;
 }
@@ -90,7 +68,7 @@ body{
 .line {
   width: 100%;
   height: 3px;
-  background-color: #eea47fff;
+  background-color: #aca5a5;
   transition: all 0.8s;
 }
 
@@ -126,9 +104,6 @@ body{
   padding: 3px 0;
 }
 
-
-
-
 .banner{
   padding-top: 10rem;
   margin-left: 1rem;
@@ -137,7 +112,7 @@ body{
 }
 
 .banner span{
-  color: #eea47fff;
+  color: #6e6868;
 }
 
 .banner-title{
@@ -152,15 +127,25 @@ body{
 /* ------ About section  ------ */
 
 .about-title{
-  text-align: left;
+  text-align: center;
   font-size: large;
   align-items: center;
-  padding: 0 220px 0 10px;
 }
 
-.about-title .block-divider{
-  border: 0.5px solid #d82e18;
+.about-subtitle{
+  color:#486581d7;
 }
+
+.border{
+  width: 90px;
+  height: 5px;
+  background: #34495e;
+  margin: 5px auto;
+}
+
+/* .block-divider{
+  border: 0.5px solid #00539cff;
+} */
 
 .about-us{
   text-align: center;
@@ -186,11 +171,11 @@ body{
 }
 
 .card{
-  background-color: rgba(0, 83, 156, 0.705);
+  background-color: rgba(0, 83, 156, 0.767);
   border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 30px rgba(28, 96, 184, 0.747);
   /* here customize the border of cards */
-  border: 3px ridge rgba(110, 231, 116, 0.637);
+  border: 3px ridge #00539cff;
 }
 
 .card-container{
@@ -200,6 +185,7 @@ body{
 
 .card-container img{
   width: 100%;
+  
   /* Change the height according to media queries*/
   height: 250px;
   border-radius: 20px 20px 0 0;
@@ -218,42 +204,6 @@ body{
   opacity: 0.7;
 }
 
-/*
-
-Linear gradient to add if 
-
-.card-one>.card-container:after{
-  background-image: linear-gradient(
-    135deg,
-    #d9d9eb,
-    rgba(139, 100, 64, 0.658)
-  );
-}
-
-.card-two>.card-container:after{
-  background-image: linear-gradient(
-    135deg,
-    #53c437ce,
-    rgba(230, 81, 81, 0)
-  );
-}
-
-.card-three>.card-container:after{
-  background-image: linear-gradient(
-    135deg,
-    #e4b022,
-    rgba(35, 204, 77, 0)
-  );
-}
-
-.card-four>.card-container:after{
-  background-image: linear-gradient(
-    135deg,
-    #e422d4,
-    rgba(83, 182, 107, 0)
-  );
-}
- */
 
 .card-details{
   padding: 20px 10px;
@@ -267,7 +217,7 @@ Linear gradient to add if
 }
 
 .card-details>p{
-  color: #a0a0a0;
+  color: #ffffff;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -336,9 +286,3 @@ Linear gradient to add if
   grid-area: img7;
   background-image: url("../images/img7.jpeg");
 }
-
-
-
-
-
-
