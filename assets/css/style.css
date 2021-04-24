@@ -138,14 +138,12 @@ body{
 
 .border{
   width: 90px;
-  height: 5px;
-  background: #34495e;
-  margin: 5px auto;
+  height: 7px;
+  background: #00539cff;
+  margin: 20px auto;
 }
 
-/* .block-divider{
-  border: 0.5px solid #00539cff;
-} */
+
 
 .about-us{
   text-align: center;
@@ -393,7 +391,7 @@ body{
     box-sizing: border-box;
     margin: 16px 0;
     border: 0;
-    background: rgba(72, 101, 129, 0.843);
+    background: rgba(184, 187, 189, 0.842);
     padding: 20px 40px;
     outline: none;
     color: #ffffff;
@@ -434,3 +432,105 @@ body{
       margin-top: 100px;
       text-align: right;
     }
+
+
+    /* ------ Subscribe card section ------ */
+
+    .mainlayout{
+     background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container{
+      max-width: 890px;
+      padding: 5px 20px;
+    }
+
+    .sbform{
+      position: relative;
+      display: flex;
+      margin: 40px 0;
+    }
+    
+    .contentform{
+      padding: 3em 3.5em;
+      background: #ffffff;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 9px;
+      border: 1px solid #ffffff;
+      box-shadow: 15px 19px 45px -12px rgba(22, 61, 133, 0.9);
+    }
+
+    .contentform form{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .contentform h2{
+      font-weight: 600px;
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 5px;
+      color: #3b3663;
+    }
+
+    .contentform p{
+      font-size: 16px;
+      line-height: 25px;
+      color: #6666;
+    }
+
+    .contentform input[type="text"]{
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: #999;
+      text-align: left;
+      width: 100%;
+      padding: 14px 20px;
+      box-sizing: border-box;
+      border: 1px solid #378bdf;
+      border-radius: 4px;
+    }
+
+    .contentform button{
+      font-size: 18px;
+      color: #fdfdfd;
+      background: #486581d7;
+      border: none;
+      padding: 14px 15px;
+      font-weight: 500;
+      transition: 0.7s ease-in-out;
+      border-radius: 8px;
+    }
+
+    .contentform button:hover{
+      background: rgb(35, 71, 187);
+      color: #dce2e9;
+    }
+
+    .social-icons{
+      text-align: center;
+    }
+
+    .social-icons ul li{
+      list-style: none;
+      display: inline-block;
+    }
+    
+    .social-icons ul li a{
+      padding: 8px;
+      color: #378bdf;
+    }
+
+    .social-icons ul li a span:hover{
+      color: #6e6868;
+      transition: 0.5s ease-in-out;
+    }
+
+    
+
+
