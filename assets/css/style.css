@@ -37,6 +37,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   border-radius: 50% 0 0 70%;
   transition: right .8s cubic-bezier(0.8, 0, 0, 0.8);
 }
@@ -132,7 +133,7 @@ body{
 }
 
 .about-subtitle{
-  padding-top: 100px;
+  padding-top: 80px;
   color:#486581d7;
 }
 
@@ -219,6 +220,27 @@ body{
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+}
+
+/* ------ Order section  ------ */
+
+.order-button{
+  display: inline-block;
+  font-size: 18px;
+  color: #fdfdfd;
+  background: #486581d7;
+  border: none;
+  padding: 14px 15px;
+  margin-top: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  border-radius: 8px;
+}
+
+.order-button:hover{
+  background: rgb(35, 71, 187);
+      color: #dce2e9;
 }
 
 
@@ -371,29 +393,40 @@ body{
     box-sizing: border-box;
     margin: 16px 0;
     border: 0;
-    background: rgba(184, 187, 189, 0.842);
+    background: rgba(230, 234, 236, 0.534);
     padding: 20px 40px;
     outline: none;
-    color: #ffffff;
+    color: #0823be;
     font-size: 15px;
+    font-weight: 600;
     transition: 0.5s;
   }
+  
   .contact-form-text:focus{
     box-shadow: 0 0 10px 4px #378bdf;
   }
+
   textarea.contact-form-text{
     resize: none;
-    height: 120px;
+    height: 140px;
   }
+
   .contact-form-btn{
-    float: left;
-    border: 0;
-    background: #34495e;
-    color: #fff;
-    padding: 12px 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
+  font-size: 18px;
+  color: #fdfdfd;
+  background: #486581d7;
+  border: none;
+  padding: 14px 30px;
+  margin-top: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  border-radius: 8px;
+  }
+
+  .contact-form-btn:hover{
+    background: rgb(35, 71, 187);
+      color: #dce2e9;
   }
 
 
@@ -483,7 +516,7 @@ body{
       border: none;
       padding: 14px 15px;
       font-weight: 500;
-      transition: 0.7s ease-in-out;
+      transition: 0.5s ease-in-out;
       border-radius: 8px;
     }
 
@@ -510,6 +543,4 @@ body{
       color: #6e6868;
       transition: 0.5s ease-in-out;
     }
-
-    
 
