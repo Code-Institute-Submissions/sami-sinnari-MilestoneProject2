@@ -11,16 +11,15 @@ body{
 
 /* ------ NAVBAR  ------ */
 
-.nav-container{
+.img-background{
   width: 100%;
-  height: 80vh;
-  background:  /*linear-gradient(
-      rgba(250, 250, 250, 0.993),
-      rgba(162, 196, 240, 0.2),
-      rgba(74, 84, 228, 0.4)
-  ),/* Customization with linear gradient will follow later on, if required.*/
-  url(../images/allcomponents-mobile-size.jpg) no-repeat right;
-  /*background-size: cover;  - this will go into PC size*/
+  position: relative;
+  top: 100px;
+  z-index: -1;
+}
+
+.nav-container{
+  height: 60vh;
 }
 
 .navbar{
@@ -44,7 +43,7 @@ body{
 
 .logo-container img{
   height: 100px;
-  padding: 10px 30px 0 30px;
+  padding: 10px 30px 0 15px;
   float: left;
 
 }
@@ -100,12 +99,12 @@ body{
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
- /* position: relative; */
   padding: 3px 0;
 }
 
 .banner{
-  padding-top: 10rem;
+  position: relative;
+  bottom: 190px;
   margin-left: 1rem;
   font-family: 'Shadows Into Light Two', cursive;
   font-weight: 700;
@@ -133,6 +132,7 @@ body{
 }
 
 .about-subtitle{
+  padding-top: 100px;
   color:#486581d7;
 }
 
@@ -140,7 +140,7 @@ body{
   width: 90px;
   height: 7px;
   background: #00539cff;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 
@@ -173,7 +173,7 @@ body{
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(28, 96, 184, 0.747);
   /* here customize the border of cards */
-  border: 3px ridge #00539cff;
+  border: 3px solid #00539cff;
 }
 
 .card-container{
@@ -183,7 +183,7 @@ body{
 
 .card-container img{
   width: 100%;
-  
+  z-index: -1;
   /* Change the height according to media queries*/
   height: 250px;
   border-radius: 20px 20px 0 0;
@@ -346,26 +346,6 @@ body{
   background: rgba(0,0,0,0.45);
 }
 
-@media(min-width: 680px){
-  .gallery .image{
-    width: calc(100% / 2);
-  }
-  .gallery-section{
-    padding-left: 250px;
-  }
-}
-
-@media(min-width: 1024px){
-  .gallery .image{
-    padding: 7px;
-    width: calc(100% / 3);
-  }
-
-  .gallery-section{
-    padding-left: 380px;
-  }
-}
-
   /* ------ Contact section  ------ */
   
   .contact-section{
@@ -427,7 +407,7 @@ body{
 
     .our-location p{
       float: left;
-      padding: 10px;
+      padding: 5px;
       line-height: 40px;
       margin-top: 100px;
       text-align: right;
@@ -532,5 +512,4 @@ body{
     }
 
     
-
 
