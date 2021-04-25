@@ -124,6 +124,23 @@ body{
   color: #00539cff;
 }
 
+.word-one{
+  position: relative;
+   right: 10px;
+ }
+ .word-two{
+  position: relative;
+   left: 20px;
+ }
+ .word-three{
+  position: relative;
+   right: 10px;
+ }
+ .word-four{
+  position: relative;
+   left: 25px;
+ }
+
 /* ------ About section  ------ */
 
 .about-title{
@@ -133,6 +150,7 @@ body{
 }
 
 .about-subtitle{
+  font-size: 30px;
   padding-top: 80px;
   color:#486581d7;
 }
@@ -243,6 +261,20 @@ body{
       color: #dce2e9;
 }
 
+.order-text{
+  text-align: center;
+  padding: 30px;
+  font-size: 19px;
+}
+
+.order-contact{
+  text-decoration: none;
+  color: #486581d7;
+}
+
+.order-contact:hover{
+  color: rgb(7, 17, 148);
+}
 
 /* ------ Gallery section  ------ */
 
@@ -271,6 +303,7 @@ body{
 .gallery .image{
     width: 100%;
     padding: 4px;
+    cursor: pointer;
 }
 .gallery .image span{
   display: flex;
@@ -373,7 +406,8 @@ body{
   .contact-section{
     background: url(../images/contact-us.jpeg) no-repeat center;
     background-size: cover;
-    padding: 50px 0;
+    width: 100%;
+    height: auto;
   }
   .contact-section h1{
     text-align: center;
@@ -440,10 +474,12 @@ body{
 
     .our-location p{
       float: left;
-      padding: px;
       line-height: 40px;
       margin-top: 100px;
       text-align: right;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 4px;
     }
 
 
@@ -484,7 +520,7 @@ body{
     }
 
     .contentform h2{
-      font-weight: 600px;
+      font-weight: 700px;
       font-size: 25px;
       line-height: 35px;
       margin-bottom: 5px;
@@ -492,9 +528,9 @@ body{
     }
 
     .contentform p{
-      font-size: 16px;
+      font-size: 17px;
       line-height: 25px;
-      color: #6666;
+      color: rgba(73, 70, 70, 0.664);
     }
 
     .contentform input[type="text"]{
@@ -552,7 +588,7 @@ body{
 
 
 
-    @media(min-width: 800px){
+    @media(min-width: 758px){
 
       /* --- Logo section --- */
       .logo-container img{
@@ -569,7 +605,7 @@ body{
       }
 
       .navbar{
-        width: 150px;
+        width: 180px;
         height: 60%;
       }
 
@@ -587,6 +623,25 @@ body{
         transform: rotateZ(-405deg) translate(-9px, 7px);
       }
 
+
+      .banner-title{
+        font-size: 80px;
+        position: relative;
+        bottom: 150px;
+        padding-left: 80px;
+        
+      }
+
+      .about-title{
+        padding-top: 100px;
+      }
+
+      .about-text{
+        padding: 40px;
+        color: #000000;
+        font-size: 20px;
+      }
+
       /* ------ gallery section ------ */
       .gallery .image{
         width: calc(100% / 2);
@@ -598,7 +653,7 @@ body{
 
       /* ------ Location section ------ */
       #map{
-        width: 800px;
+        width: 767px;
         height: 300px;
       }
       .our-location p{
@@ -617,21 +672,112 @@ body{
 
     @media(min-width: 1024px){
 
-      .logo-container img{
-        height: 100px;
-        padding: 10px 30px 0 30px;
-        float: left;
+   .logo-container img{
+      height: 150px;
+       padding: 10px 30px 0 50px;
+     /* float: left; */
       }
 
-      .banner-title{
-        font-size: 100px;
+   .hamburger-menu {
+      width: 50px;
+      height: 50px;
       }
+
+
+    .close .line-1 {
+     transform: rotateZ(-405deg) translate(-13px, 11px);
+    }
+
+   .navbar {
+     width: 300px;
+     height: 90%;
+   }
+
+   .nav-link {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 5px 0;
+   }
+
+   .nav-link:hover{
+     color: rgba(3, 3, 3, 0.685);
+   }
+
+
+   .nav-container {
+    height: 80vh;
+   }
+
+   .img-background{
+    width: 80%;
+    top: 150px;
+    left: 100px;
+  }
+
+   .banner-title{
+     position: relative;
+     font-size: 100px;
+     bottom: 400px;
+     padding-left: 300px;
+   }
+
+   .word-one{
+     right: 100px;
+   }
+   .word-two{
+     left: 100px;
+   }
+   .word-three{
+     right: 100px;
+   }
+   .word-four{
+     left: 100px;
+   }
+
+   .about-text{
+     font-size: 24px;
+     word-spacing: 4px;
+   }
+
+   .about-subtitle{
+     font-size: 40px;
+   }
+
+   .order-text {
+    font-size: 25px;
+   }
+
+
       .gallery .image{
-        padding: 7px;
-        width: calc(100% / 3);
+    padding: 7px;
+     width: calc(100% / 3);
+   }
+    
+   .gallery-section{
+     padding-left: 380px;
+      }
+
+      .contact-section{
+        width: 100%;
+        height: 1000px;
       }
     
-      .gallery-section{
-        padding-left: 380px;
-      }
+      .contact-form {
+        max-width: 600px;
+        padding: 200px 10px;
+    }
+
+    #map{
+      width: 100%;
+      height: 300px;
+    }
+
+    .our-location p{
+      line-height: 50px;
+      margin: 30px;
+      font-size: 20px;
+      padding: 10px;
+    }
+
     }
