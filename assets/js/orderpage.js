@@ -145,6 +145,12 @@ class UI {
     cart.forEach(item => this.addCartItem(item));
   }
 
+  cartLogic() {
+    
+    clearCartBtn.addEventListener("click", () => {
+      this.clearCart();
+      this.hide();
+    });
 
-  
-}
+    
+  }}
