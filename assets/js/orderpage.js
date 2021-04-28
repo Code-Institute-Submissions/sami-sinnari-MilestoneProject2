@@ -50,3 +50,36 @@ class UI {
     productDOM.innerHTML = results;
   }
 
+  getButtons() {
+    let buttons = [...document.querySelectorAll(".addToCart")];
+    buttonDOM = buttons;
+    buttons.forEach(button => {
+      let id = button.dataset.id;
+      let inCart = cart.find(item => item.id === parseInt(id, 10));
+
+      if (inCart) {
+        button.innerText = "In Cart";
+        button.disabled = true;
+      }
+
+      button.addEventListener("click", e => {
+        e.preventDefault();
+        e.target.innerHTML = "In Cart";
+        e.target.disabled = true;
+
+        
+        const cartItem = { ...Storage.getProduct(id), amount: 1 };
+
+        // this will add product to the cart
+        cart = [...cart, cartItem];
+
+        // This will save the cart
+        Storage.saveCart(cart);
+        this.setItemValues(cart);
+        this.addCartItem(cartItem);
+
+      });
+    });
+  }
+
+  
