@@ -67,14 +67,14 @@ class UI {
         e.target.innerHTML = "In Cart";
         e.target.disabled = true;
 
-        
         const cartItem = { ...Storage.getProduct(id), amount: 1 };
 
-        // this will add product to the cart
+        // this will add product to the cart 
         cart = [...cart, cartItem];
 
         // This will save the cart
         Storage.saveCart(cart);
+
         this.setItemValues(cart);
         this.addCartItem(cartItem);
 
@@ -82,4 +82,45 @@ class UI {
     });
   }
 
-  
+  setItemValues(cart) {
+    let tempTotal = 0;
+    let itemTotal = 0;
+
+    cart.map(item => {
+      tempTotal += item.price * item.amount;
+      itemTotal += item.amount;
+    });
+    cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+    itemTotals.innerText = itemTotal;
+  }
+
+  addCartItem({ image, price, title, id }) {
+    const div = document.createElement("div");
+    div.classList.add("cart__item");
+
+    div.innerHTML = `<img src=${image}>
+          <div>
+            <h3>${title}</h3>
+            <h3 class="price">$${price}</h3>
+          </div>
+          <div>
+            <span class="increase" data-id=${id}>
+            <i class="fas fa-sort-up"></i>
+            </span>
+            <p class="item__amount">1</p>
+            <span class="decrease" data-id=${id}>
+            <i class="fas fa-sort-down"></i>
+            </span>
+          </div>
+
+            <span class="remove__item" data-id=${id}>
+            <i class="fas fa-trash"></i>
+            </span>
+        </div>`;
+        
+    cartContent.appendChild(div);
+  }
+
+
+
+}
