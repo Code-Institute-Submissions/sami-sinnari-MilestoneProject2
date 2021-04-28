@@ -146,11 +146,43 @@ class UI {
   }
 
   cartLogic() {
-    
+
     clearCartBtn.addEventListener("click", () => {
       this.clearCart();
       this.hide();
     });
 
-    
-  }}
+    cartContent.addEventListener("click", e => {
+      let target = e.target.closest("span");
+      let targetElement = target.classList.contains("remove__item");
+      if (!target) return;
+
+      if (targetElement) {
+        let id = parseInt(target.dataset.id);
+        this.removeItem(id);
+        cartContent.removeChild(target.parentElement);
+      } else if (target.classList.contains("increase")) {
+        let id = parseInt(target.dataset.id, 10);
+        let tempItem = cart.find(item => item.id === id);
+        tempItem.amount++;
+        Storage.saveCart(cart);
+        this.setItemValues(cart);
+        target.nextElementSibling.innerText = tempItem.amount;
+      } else if (target.classList.contains("decrease")) {
+        let id = parseInt(target.dataset.id, 10);
+        let tempItem = cart.find(item => item.id === id);
+        tempItem.amount--;
+
+        if (tempItem.amount > 0) {
+          Storage.saveCart(cart);
+          this.setItemValues(cart);
+          target.previousElementSibling.innerText = tempItem.amount;
+        } else {
+          this.removeItem(id);
+          cartContent.removeChild(target.parentElement.parentElement);
+        }
+      }
+    });
+  }
+
+}
