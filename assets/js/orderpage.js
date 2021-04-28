@@ -208,3 +208,45 @@ class UI {
     return buttonDOM.find(button => parseInt(button.dataset.id) === id);
   }
 }
+
+class Products {
+  async getProducts() {
+    try {
+      let result = await fetch("products.json");
+      let data = await result.json();
+      let products = data.items;
+      return products;
+    } catch (err) {
+      console.log(err);
+    }
+  }
+}
+
+class Storage {
+  static saveProduct(obj) {
+    localStorage.setItem("products", JSON.stringify(obj));
+  }
+  static saveCart(cart) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+  static getProduct(id) {
+    let products = JSON.parse(localStorage.getItem("products"));
+    return products.find(product => product.id === parseFloat(id, 10));
+  }
+  static getCart() {
+    return localStorage.getItem("cart")
+      ? JSON.parse(localStorage.getItem("cart"))
+      : [];
+  }
+}
+document.addEventListener("DOMContentLoaded", async () => {
+  let productList = new Products();
+  let ui = new UI();
+  ui.setAPP();
+
+  let products = await productList.getProducts();
+  ui.displayProducts(products);
+  Storage.saveProduct(products);
+  ui.getButtons();
+  ui.cartLogic();
+});
