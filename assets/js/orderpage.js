@@ -185,4 +185,26 @@ class UI {
     });
   }
 
+  clearCart() {
+    let cartItems = cart.map(item => item.id);
+    cartItems.forEach(id => this.removeItem(id));
+
+    while (cartContent.children.length > 0) {
+      cartContent.removeChild(cartContent.children[0]);
+    }
+  }
+
+  removeItem(id) {
+    cart = cart.filter(item => item.id !== id);
+    this.setItemValues(cart);
+    Storage.saveCart(cart);
+
+    let button = this.singleButton(id);
+    button.disabled = false;
+    button.innerText = "Add to Cart";
+  }
+
+  singleButton(id) {
+    return buttonDOM.find(button => parseInt(button.dataset.id) === id);
+  }
 }
