@@ -122,5 +122,29 @@ class UI {
   }
 
 
+  show() {
+    cartDOM.classList.add("show");
+    overlay.classList.add("show");
+  }
 
+  hide() {
+    cartDOM.classList.remove("show");
+    overlay.classList.remove("show");
+  }
+
+  setAPP() {
+    cart = Storage.getCart();
+    this.setItemValues(cart);
+    this.populate(cart);
+
+    openCart.addEventListener("click", this.show);
+    closeCart.addEventListener("click", this.hide);
+  }
+
+  populate(cart) {
+    cart.forEach(item => this.addCartItem(item));
+  }
+
+
+  
 }
