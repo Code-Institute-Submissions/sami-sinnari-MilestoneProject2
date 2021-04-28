@@ -1,0 +1,99 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Madd AMD Build",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 1079,
+            "image": "./assets/images/pc-pic-1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Acer Predator 2021",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 950,
+            "image": "./assets/images/pc-pic-7.jpg"
+        },
+        {
+            "id": 3,
+            "title": "PCS Fnatic Build",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 750,
+            "image": "./assets/images/pc-pic-3.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Omen Nexus 2",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 999,
+            "image": "./assets/images/pc-pic-4.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Zomexx Build",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 250,
+            "image": "./assets/images/pc-pic-5.jpg"
+
+        },
+        {
+            "id": 6,
+            "title": "MSI Trident 2",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 850,
+            "image": "./assets/images/pc-pic-6.jpg"
+
+        },
+        {
+            "id": 7,
+            "title": "Acer Predator 2021",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 600,
+            "image": "./assets/images/pc-pic-7.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Acer Predator 2021",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 999,
+            "image": "./assets/images/pc-pic-4.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Acer Predator 2021",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 250,
+            "image": "./assets/images/pc-pic-5.jpg"
+
+        },
+        {
+            "id": 10,
+            "title": "Acer Predator 2021",
+            "specs1": "Intel Core i5-10400F Processor",
+            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
+            "price": 850,
+            "image": "./assets/images/pc-pic-6.jpg"
+
+        }
+        
+    ]
+}
