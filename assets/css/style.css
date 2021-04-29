@@ -143,13 +143,13 @@ body{
 
 /* ------ About section  ------ */
 
-.about-title{
-  text-align: center;
-  font-size: large;
-  align-items: center;
+
+#about-section{
+  padding-top: 3em;
 }
 
 .about-subtitle{
+  text-align: center;
   font-size: 30px;
   padding-top: 80px;
   color:#486581d7;
@@ -408,6 +408,7 @@ body{
     background-size: cover;
     width: 100%;
     height: auto;
+    padding-top: 20px;
   }
   .contact-section h1{
     text-align: center;
@@ -543,6 +544,7 @@ body{
       box-sizing: border-box;
       border: 1px solid #378bdf;
       border-radius: 4px;
+      outline: none;
     }
 
     .contentform button{
@@ -630,10 +632,6 @@ body{
         bottom: 150px;
         padding-left: 80px;
         
-      }
-
-      .about-title{
-        padding-top: 100px;
       }
 
       .about-text{
@@ -780,4 +778,5 @@ body{
       padding: 10px;
     }
 
-    }
+    }  
+    
