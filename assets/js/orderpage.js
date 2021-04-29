@@ -27,28 +27,29 @@ class UI {
   displayProducts(products) {
     let results = "";
     products.forEach(({ title, specs1, specs2, specs3, price, image, id }) => {
-      //Div class "product" was firstly created in orderpage.html file, then inserted here.
+      //div class "product" was firstly created in orderpage.html file, then inserted here.
       results += ` 
       <div class="product">
-        <div class="image__container">
-          <img src=${image} alt="" />
+        <div>
+          <img src=${image} alt="Image of a PC"/>
         </div>
         <div class="product__footer">
           <h1>${title}</h1>
-          <p>${specs1}</p>
-          <p>${specs2}</p>
-          <p>${specs3}</p>
+          <p class="spec-p">${specs1}</p>
+          <p class="spec-p">${specs2}</p>
+          <p class="spec-p">${specs3}</p>
           <div class="bottom">       
           </div>
           <div class="price">$${price}</div>
           <button class="btn addToCart" data-id= ${id} >Add to Cart</button>
-          
         </div>
       </div>`;
     });
 
     productDOM.innerHTML = results;
   }
+
+  
 
   getButtons() {
     let buttons = [...document.querySelectorAll(".addToCart")];
@@ -72,7 +73,7 @@ class UI {
         // this will add product to the cart 
         cart = [...cart, cartItem];
 
-        // This will save the cart
+        // this will save the cart
         Storage.saveCart(cart);
 
         this.setItemValues(cart);
