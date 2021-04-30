@@ -150,13 +150,13 @@ body{
 
 .about-subtitle{
   text-align: center;
-  font-size: 30px;
+  font-size: 27px;
   padding-top: 80px;
   color:#486581d7;
 }
 
 .border{
-  width: 90px;
+  width: 70px;
   height: 7px;
   background: #00539cff;
   margin: 40px auto;
@@ -184,7 +184,7 @@ body{
   grid-template-columns: repeat(auto-fit,
   minmax(300px,1fr));
   padding: 20px;
-  grid-gap:40px;
+  grid-gap:50px;
 }
 
 .card{
@@ -270,6 +270,7 @@ body{
 .order-contact{
   text-decoration: none;
   color: #486581d7;
+  cursor: pointer;
 }
 
 .order-contact:hover{
