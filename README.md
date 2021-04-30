@@ -94,7 +94,7 @@
 > - Order page which containes products. Products can be added to the cart and their number can be increased or decreased. The price of the product will change as customer is changing the amount. If customer goes to Home page, products will be saved in the cart as they are stored. JSON used in that section.
 > -  Footer which containes **Subscribe** card and **Social links**
 
-### Features Left to Implement :
+### Features Left to Implement when relevant knowledge gained :
 
 > - I would like to connect the **Send** button in Contact Us page and **Subscribe** button in the footer with back-end technologies.
 > - I would like to connect the **Purchase** button in Order Now page with [Stripes](https://stripe.com/docs/connect/creating-a-payments-page) **Crate a payment page**.
@@ -116,6 +116,7 @@
 > ![Image](https://res.cloudinary.com/docyuifc9/image/upload/c_scale,w_60/v1619744731/js_fveoqo.png) [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Programs:
+
 > ![Image](https://res.cloudinary.com/docyuifc9/image/upload/c_scale,w_60/v1619745480/pictures/logos/font_awesome_logo_djde4p.png) [Font Awesome](https://fontawesome.com/) - Font awesome was used in order to add icons to social links and whole of the cart.
 
 > ![Image](https://res.cloudinary.com/docyuifc9/image/upload/c_scale,w_60/v1619745480/pictures/logos/Google-Fonts-Logo_p07ouz.png)[Google Fonts](https://fonts.google.com/) - Google fonts were used to add font to the website.
@@ -132,6 +133,28 @@
 
 ---
 
+## Testing
+> in process ...
+
+### Testing User Stories from UX Section
+
+> - _"I don't have a PC or Laptop at home and so I mostly do my reaserch on a mobile phone"_
+> - **I created the website fully responsive across so customer can use it on any device.**
+> - _"I want to see some of their previous PC designs before ordering"_
+> - **I created the section called "Gallery" in order to prove the customers we are dedicatet in our work.**
+> - _"I want to get in touch with the company because i'd like to add some feature in a PC"_
+> - **I created the section called "Contact Us" so customers can get it touch with us regarding any need.**
+> - _"I want to be able to subscribe to PCbuilds so I can get update on their future computers."_
+> - **I created the card in the footer where customers can Subscribe to us so they can stay up to date with any news.**
+> - _"I want to be able to join a facebook/instagram or twitter page so I can get to know the company"_
+> - **I created the social links in the Subscribe card so customers can follow us on social media.**
+> - _"I would like to buy from them, but I'd love too see what else they offer"_
+> - **I created the order page where they can see more PC builds and order the one they like and are able to afford.**
+
+### Further Testing
+
+> - This website was tested across multiple browsers and devices. On every occasion, the website appered fully functional and without any errors.
+
 #### [Back to Contents](#contents)
 
  ---
@@ -140,28 +163,26 @@
 
 ### GitHub Pages
 
-The project was deployed to GitHub Pages using the following steps:
- 1. After pushing the project to GitHub, I opened the GitHub site and logged in.
- 2. After logging in, I located the repository for the project: [github.com/sami-sinnari/MilestoneProject1](https://github.com/sami-sinnari/MilestoneProject1)
- 3. At the top of the repository, I clicked on the "Settings" button.
- 4. On the settings page, I scrolled down to the "GitHub Pages" section.
- 5. Under "Source", I selected "Master Branch" from the dropdown menu.
- 6. After the page refreshed itself, I scrolled back down to the "GitHub Pages" section to retrive the link to the published  site.
-
-The site can be viewed here: .....
+> - The project was deployed to GitHub Pages using the following steps:
+> - 1. After pushing the project to GitHub, I opened the GitHub site and logged in.
+> - 2. After logging in, I located the repository for the project: [github.com/sami-sinnari/MilestoneProject2](https://github.com/sami-sinnari/MilestoneProject2)
+> - 3. At the top of the repository, I clicked on the "Settings" button.
+> - 4. On the settings page, I scrolled down to the "GitHub Pages" section.
+> - 5. Under "Source", I selected "Master Branch" from the dropdown menu.
+> - 6. After the page refreshed itself, I scrolled back down to the "GitHub Pages" section to retrive the link to the published  site.
+> - The site can be viewed here: .....
 
 ### Making a Local Clone
 
-To clone the repository to make a local copy on your computer, follow these steps:
-
-1. Open GitHub and locate the GitHub repository: [github.com/sami-sinnari/MilestoneProject1](https://github.com/sami-sinnari/MilestoneProject1)
-2. Under the repository name, click "Code" or "Clone" and copy the link to clone the repository using "HTTPS".
-3. After copying the link, open terminal on your computer. This step can also be done in the terminal on an IDE.
-4. Change the current working directory to the location where you want the cloned directory to be saved.
-5. Type git clone, and then paste the URL: [https://github.com/sami-sinnari/MilestoneProject1](https://github.com/sami-sinnari/MilestoneProject1) - see example below:
+> - To clone the repository to make a local copy on your computer, follow these steps:
+> - 1. Open GitHub and locate the GitHub repository: [github.com/sami-sinnari/MilestoneProject2](https://github.com/sami-sinnari/MilestoneProject2)
+> - 2. Under the repository name, click "Code" or "Clone" and copy the link to clone the repository using "HTTPS".
+> - 3. After copying the link, open terminal on your computer. This step can also be done in the terminal on an IDE.
+> - 4. Change the current working directory to the location where you want the cloned directory to be saved.
+> - 5. Type git clone, and then paste the URL: [https://github.com/sami-sinnari/MilestoneProject2](https://github.com/sami-sinnari/MilestoneProject2) - see example below:
 
 ```
-git clone https://github.com/sami-sinnari/MilestoneProject1.git
+git clone https://github.com/sami-sinnari/MilestoneProject2.git
 ```
 
 7. Press Enter to create a local clone.
@@ -172,32 +193,32 @@ git clone https://github.com/sami-sinnari/MilestoneProject1.git
 
 ## Credits
 
- In process ...
+> -In process ...
 
 ### Pictures
 
-Pictures used in this project were aquired on [Adobe Stock Images ](https://stock.adobe.com/)
+> - Pictures used in this project were aquired on [Adobe Stock Images ](https://stock.adobe.com/)
 
 
 
 ### Code
 
- In process ...
+> - In process ...
 
 
 ### Content
- - The content on this site was written by the developer.
- - The README is based on the Code Institute sample of README file
+> - The content on this site was written by the developer.
+> - The README is based on the Code Institute sample of README file.
 
 
 ### Acknowledgements
 
- In process ...
+> - In process ...
 
 #### [Back to Contents](#contents)
 
 ---
 
-This site was built for educational purposes. If you find any content not mentioned in **Credits** that violates the copyrights, please contact me on samisinnari@gmail.com
+This site was built for educational purposes only. If you find any content not mentioned in **Credits** that violates the copyrights, please contact me on samisinnari@gmail.com
 
 ---
