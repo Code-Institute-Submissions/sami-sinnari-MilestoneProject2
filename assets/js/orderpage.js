@@ -16,6 +16,8 @@ let clearCartBtn = document.querySelector(".clear__cart");
 
 let itemTotals = document.querySelector(".item__total");
 
+
+
 let cart = [];
 
 let buttonDOM = [];
@@ -26,8 +28,9 @@ let buttonDOM = [];
 class UI {
   displayProducts(products) {
     let results = "";
-    products.forEach(({ title, specs1, specs2, specs3, price, image, id }) => {
+    products.forEach(({ title, specs1, specs2, specs3, price, image, id })=>{
       //div class "product" was firstly created in orderpage.html file, then inserted here.
+
       results += ` 
       <div class="product">
         <div>
@@ -51,10 +54,11 @@ class UI {
 
   
 
-  getButtons() {
+  orderButtons() {
     let buttons = [...document.querySelectorAll(".addToCart")];
     buttonDOM = buttons;
     buttons.forEach(button => {
+
       let id = button.dataset.id;
       let inCart = cart.find(item => item.id === parseInt(id, 10));
 
@@ -64,18 +68,20 @@ class UI {
       }
 
       button.addEventListener("click", e => {
+
         e.preventDefault();
         e.target.innerHTML = "In Cart";
         e.target.disabled = true;
 
-        const cartItem = { ...Storage.getProduct(id), amount: 1 };
+        let cartItem = { ...Storage.getProduct(id), amount: 1 };
 
         // this will add product to the cart 
         cart = [...cart, cartItem];
 
-        // this will save the cart
-        Storage.saveCart(cart);
 
+        // this will save the cart
+
+        Storage.saveCart(cart);
         this.setItemValues(cart);
         this.addCartItem(cartItem);
 
@@ -84,20 +90,26 @@ class UI {
   }
 
   setItemValues(cart) {
+
     let tempTotal = 0;
     let itemTotal = 0;
 
     cart.map(item => {
+
       tempTotal += item.price * item.amount;
       itemTotal += item.amount;
     });
+
     cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
     itemTotals.innerText = itemTotal;
   }
 
+
   addCartItem({ image, price, title, id }) {
-    const div = document.createElement("div");
+
+    let div = document.createElement("div");
     div.classList.add("cart__item");
+
 
     div.innerHTML = `<img src=${image}>
           <div>
@@ -123,15 +135,18 @@ class UI {
   }
 
 
+
   show() {
     cartDOM.classList.add("show");
     overlay.classList.add("show");
   }
 
+
   hide() {
     cartDOM.classList.remove("show");
     overlay.classList.remove("show");
   }
+
 
   setAPP() {
     cart = Storage.getCart();
@@ -149,9 +164,11 @@ class UI {
   cartLogic() {
 
     clearCartBtn.addEventListener("click", () => {
+      
       this.clearCart();
       this.hide();
     });
+
 
     cartContent.addEventListener("click", e => {
       let target = e.target.closest("span");
@@ -162,14 +179,18 @@ class UI {
         let id = parseInt(target.dataset.id);
         this.removeItem(id);
         cartContent.removeChild(target.parentElement);
-      } else if (target.classList.contains("increase")) {
+      } 
+      
+      else if (target.classList.contains("increase")) {
         let id = parseInt(target.dataset.id, 10);
         let tempItem = cart.find(item => item.id === id);
         tempItem.amount++;
         Storage.saveCart(cart);
         this.setItemValues(cart);
         target.nextElementSibling.innerText = tempItem.amount;
-      } else if (target.classList.contains("decrease")) {
+      } 
+      
+      else if (target.classList.contains("decrease")) {
         let id = parseInt(target.dataset.id, 10);
         let tempItem = cart.find(item => item.id === id);
         tempItem.amount--;
@@ -178,7 +199,9 @@ class UI {
           Storage.saveCart(cart);
           this.setItemValues(cart);
           target.previousElementSibling.innerText = tempItem.amount;
-        } else {
+        } 
+        
+       else {
           this.removeItem(id);
           cartContent.removeChild(target.parentElement.parentElement);
         }
@@ -187,6 +210,7 @@ class UI {
   }
 
   clearCart() {
+
     let cartItems = cart.map(item => item.id);
     cartItems.forEach(id => this.removeItem(id));
 
@@ -196,9 +220,11 @@ class UI {
   }
 
   removeItem(id) {
+
     cart = cart.filter(item => item.id !== id);
     this.setItemValues(cart);
     Storage.saveCart(cart);
+
 
     let button = this.singleButton(id);
     button.disabled = false;
@@ -210,8 +236,10 @@ class UI {
   }
 }
 
+
 class Products {
   async getProducts() {
+
     try {
       let result = await fetch("products.json");
       let data = await result.json();
@@ -224,22 +252,28 @@ class Products {
 }
 
 class Storage {
+  //made serialization below to convert
   static saveProduct(obj) {
     localStorage.setItem("products", JSON.stringify(obj));
   }
+
   static saveCart(cart) {
     localStorage.setItem("cart", JSON.stringify(cart));
   }
+
   static getProduct(id) {
+    // deserialization with parse
     let products = JSON.parse(localStorage.getItem("products"));
     return products.find(product => product.id === parseFloat(id, 10));
   }
+
   static getCart() {
     return localStorage.getItem("cart")
       ? JSON.parse(localStorage.getItem("cart"))
       : [];
   }
 }
+
 document.addEventListener("DOMContentLoaded", async () => {
   let productList = new Products();
   let ui = new UI();
@@ -248,6 +282,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   let products = await productList.getProducts();
   ui.displayProducts(products);
   Storage.saveProduct(products);
-  ui.getButtons();
+  ui.orderButtons();
   ui.cartLogic();
 });
