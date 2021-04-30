@@ -52,7 +52,7 @@
           <a href="#gallery-section" class="nav-link">Gallery</a>
         </li>
         <li class="nav-items">
-          <a href="#contact-section" class="nav-link">Contact</a>
+          <a href="#contact-section" class="nav-link">Contact Us</a>
         </li>
         <li class="nav-items">
           <a href="#subscribe-section" class="nav-link">Subscribe</a>
@@ -68,10 +68,9 @@
     <div class="border"></div>
   </div>   
    <div class="about-text">
-        <p>PCbuilds is dedicated to supply PC gamers with everything 
-          they need to get the best gaming rig for their budget. 
-          From building PC from scratch, to shipping 
-          the best quality PC components. <br>
+        <p>PCbuilds is dedicated to supply PC gamers with everything they need to get the best gaming rig for their budget. 
+          We have the most perfect performance for any individual; If you need any help with choosing a gaming pc, feel free to contact us and we can put a quote together for you.
+          We build from scratch so no matter what PC you're looking to buy - we've got the ideal custom built PC for you! <br>
           If you game on PC, we’ve got you.</p>
    </div>
 
@@ -169,18 +168,27 @@
 <div class="shadow"></div>
 </section>
 
-<!-- Contact section -->
+<!-- Contact Us -->
 <div class="contact-section" id="contact-section">
-  <h1>Contact Us</h1>
-  <div class="border"></div>
-  <form class="contact-form" action="index.html" method="post">
-    <input type="text" class="contact-form-text" placeholder="Your name">
-    <input type="email" class="contact-form-text" placeholder="Your email">
-    <input type="text" class="contact-form-text" placeholder="Your phone">
-    <textarea class="contact-form-text" placeholder="Your message here..."></textarea>
-    <input type="submit" class="contact-form-btn" value="Send">
+  <form id=contactForm onsubmit="return sendMail(this);" class="contact-form">
+    
+      <label for="name"></label>
+      <input type="text" name="name" class="contact-form-text" id="name" placeholder="Your Name"required />
+
+      <label for="emailaddress"></label>
+      <input type="email" name="email" class="contact-form-text" id="emailaddress" placeholder="Email Address"required />
+
+      <label for="number"></label>
+      <input type="text" name="number" class="contact-form-text" id="phonenumber" placeholder="Your phone" required>
+
+      <label for="message"></label>
+      <textarea rows="5" name="message" class="contact-form-text" id="message" placeholder="Message" required></textarea>
+
+      <button id="submit-btn" type="submit" class="contact-form-btn">Send</button>
+
   </form>
 </div>
+
 
 <!-- Location section -->
 
@@ -198,52 +206,50 @@
 </div>
  
 <!-- Subscribe card -->
+<footer>
+  <div class="mainlayout" id="subscribe-section">
+    <div class="container">
+      <div class="sbform">
+        <div class="contentform">
+          <h2>Subscribe Now</h2>
+          <p>Sign up now for all the latest news, builds, and ideas for your PC gaming setup. </p>
 
-<div class="mainlayout" id="subscribe-section">
-  <div class="container">
-    <div class="sbform">
-      <div class="contentform">
-        <h2>Subscribe Now</h2>
-        <p>Sign up now for all the latest news, builds, and ideas for your PC gaming setup. </p>
+          <form>
+            <label for="name"></label>
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <label for="email"></label>
+            <input type="text" name="email" placeholder="Enter Your Email" required>
+            <button class="subcard-btn" type="submit">Subscribe</button>
+          </form>
 
-        <form>
-          <input type="text" name="name" placeholder="Enter Your Name">
-          <input type="text" name="email" placeholder="Enter Your Email">
-          <button class="subcard-btn" type="submit">Subscribe</button>
-        </form>
+          <div class="social-icons">
+            <ul>
+              <li><a href="https://www.facebook.com/" target="blank"><span class="fab fa-facebook fa-2x"></span></a></li>
+              <li><a href="https://twitter.com/" target="blank"><span class="fab fa-twitter-square fa-2x"></span></a></li>
+              <li><a href="https://www.instagram.com/" target="blank"><span class="fab fa-instagram-square fa-2x"></span></a></li>
+            </ul>
+          </div>
 
-        <div class="social-icons">
-          <ul>
-            <li><a href="https://www.facebook.com/" target="blank"><span class="fab fa-facebook fa-2x"></span></a></li>
-            <li><a href="https://twitter.com/" target="blank"><span class="fab fa-twitter-square fa-2x"></span></a></li>
-            <li><a href="https://www.instagram.com/" target="blank"><span class="fab fa-instagram-square fa-2x"></span></a></li>
-          </ul>
         </div>
-
       </div>
     </div>
   </div>
-</div>
-
-
-
-
-
-<footer>
-
-
 </footer>
 
 
 <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPJQHGFJgFHNFgYlRpv3IgKLCIwQ3JcIY&callback=initMap"
 type="text/javascript"></script>
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script src="./assets/js/maps.js"></script>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/gallery.js"></script>
-
+<script src="./assets/js/sendemail.js"></script>
+<script>
+  (function() {
+    emailjs.init("user_zzDV2sbGZ33iGetPtxiUb");
+  })();
+</script>
 
 </body>
 </html>
