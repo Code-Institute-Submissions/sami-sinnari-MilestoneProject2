@@ -1,6 +1,7 @@
 
   body {
     font-size: 17px;
+    font-family: "Fredericka the great", sans-serif;
   }
   
     html {
@@ -17,6 +18,7 @@
     list-style: none;
   }
   
+  
   /* Cart Navigation */
   
   
@@ -32,7 +34,7 @@
     transition: 0.9s ease-in;
   }
  
- /* ------ NAVBAR (copied from index.html) ------ */
+ /* ------ NAVBAR ------ */
   .nav-container{
     height: 15vh;
   }
@@ -59,7 +61,7 @@
   
   .logo-container img{
     height: 100px;
-    padding: 10px 30px 0 15px;
+    padding: 2px 30px 0 7px;
     float: left;
   
   }
@@ -110,7 +112,7 @@
   
   .nav-link{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 13px;
     color: #eee;
     font-weight: 500;
     letter-spacing: 1px;
@@ -174,11 +176,6 @@
   .fa-cart-arrow-down{
     font-size: 30px;
     color: #025dacf3;
-  }
-
-  .fa-cart-arrow-down:hover{
-    color: #a0a3ad;
-    transition: 0.3s ease-in-out;
   }
 
   .cart.show {
@@ -378,9 +375,9 @@
 
     .logo-container img{
       height: 150px;
-      padding: 10px 30px 0 30px;
-      float: left;   
-    }
+      padding: 2px 30px 0 24px;
+      float: left;
+      }
 
     .container {
       padding: 0 5rem;
@@ -421,6 +418,7 @@
       margin: 2.3em;
     }
 
+
     .cart__item {
       grid-template-columns: 1fr 2fr 0.5fr 0.5fr;
     }
@@ -449,7 +447,8 @@
     }
     .logo-container img{
     height: 150px;
-     padding: 10px 30px 0 50px;
+    padding: 2px 30px 0 42px;
+    float: left;
     }
 
     .hamburger-menu {
