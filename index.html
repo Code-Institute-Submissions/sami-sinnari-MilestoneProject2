@@ -28,10 +28,11 @@
   <div class="nav-container">
     <img class="img-background" src="./assets/images/pc-picture-desktop.jpg" alt="PC picture">
 
+    <div>
     <div class="banner">
-      <h2 class="banner-title"><span class="word-one">We</span><br><span class="word-two">build</span><br><span class="word-three">for</span><br><span class="word-four">Gamers</span></h2>
+      <h2 class="banner-title">We<br>build<br>for</span><br><span class="word-four">Gamers</span></h2>
     </div>
-
+  </div>
      <nav class="navbar">
           <div class="hamburger-menu">
             <div class="line line-1"></div>
@@ -56,6 +57,9 @@
         </li>
         <li class="nav-items">
           <a href="#subscribe-section" class="nav-link">Subscribe</a>
+        </li>
+        <li class="nav-items">
+          <a href="orderpage.html" class="nav-link purchase-button">Purchase</a>
         </li>
       </ul>
     </nav>
@@ -170,7 +174,7 @@
 
 <!-- Contact Us -->
 <div class="contact-section" id="contact-section">
-  <form id=contactForm onsubmit="return sendMail(this);" class="contact-form">
+  <form id="contactForm" onsubmit="return sendMail(this);" class="contact-form">
     
       <label for="name"></label>
       <input type="text" name="name" class="contact-form-text" id="name" placeholder="Your Name"required />
@@ -213,16 +217,15 @@
         <div class="contentform">
           <h2>Subscribe Now</h2>
           <p>Sign up now for all the latest news, builds, and ideas for your PC gaming setup. </p>
-
-          <form>
+          <form id="subscribeForm" onsubmit="return sendSubscribtionMail(this);" >
             <label for="name"></label>
-            <input type="text" name="name" placeholder="Enter Your Name" required>
-            <label for="email"></label>
-            <input type="text" name="email" placeholder="Enter Your Email" required>
-            <button class="subcard-btn" type="submit">Subscribe</button>
-          </form>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <label for="emailaddress"></label>
+            <input type="email" name="email" placeholder="Your email" required />
+            <button id="submit-btn-subscribe" type="submit" class="subcard-btn">Subscribe</button>
+        </form> 
 
-          <div class="social-icons">
+          <div class="social-icons"> 
             <ul>
               <li><a href="https://www.facebook.com/" target="blank"><span class="fab fa-facebook fa-2x"></span></a></li>
               <li><a href="https://twitter.com/" target="blank"><span class="fab fa-twitter-square fa-2x"></span></a></li>
