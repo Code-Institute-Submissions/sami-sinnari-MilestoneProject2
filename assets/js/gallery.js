@@ -1,8 +1,9 @@
 
 /*    GALLERY    */
 
+// Gallery code was thought by Youtube Tutorials, link : https://www.youtube.com/watch?v=dkLpo4shS6c&t=4611s
 
-const gallery  = document.querySelectorAll(".image"),
+let gallery  = document.querySelectorAll(".image"),
 previewBox = document.querySelector(".preview-box"),
 previewImg = previewBox.querySelector("img"),
 closeIcon = previewBox.querySelector(".icon"),
@@ -25,8 +26,8 @@ window.onload = ()=>{
             }
             preview(); 
     
-            const prevBtn = document.querySelector(".prev");
-            const nextBtn = document.querySelector(".next");
+            let prevBtn = document.querySelector(".prev");
+            let nextBtn = document.querySelector(".next");
             if(newIndex == 0){ 
                 prevBtn.style.display = "none"; 
             }
