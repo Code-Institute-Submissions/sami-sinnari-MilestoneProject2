@@ -9,6 +9,7 @@
       integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
       <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap" rel="stylesheet"> 
       <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -20,12 +21,6 @@
 
   <div class="nav-container">
     <img class="img-background" src="./assets/images/pc-picture-desktop.jpg" alt="PC picture">
-
-    <div>
-    <div class="banner">
-      <h2 class="banner-title">We<br>build<br>for</span><br><span class="word-four">Gamers</span></h2>
-    </div>
-  </div>
      <nav class="navbar">
           <div class="hamburger-menu">
             <div class="line line-1"></div>
@@ -153,7 +148,7 @@
 </div>
 <div class="preview-box">
   <div class="details">
-    <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+    <span class="title"><p class="current-img"></p> - <p class="total-img"></p></span>
     <span class="icon fas fa-times"></span>
   </div>
   <div class="image-box">
@@ -166,7 +161,15 @@
 </section>
 
 <!-- Contact Us -->
+
+
 <div class="contact-section" id="contact-section">
+
+  <div id="about-section">
+    <h2 class="about-subtitle">Contact Us</h2>
+    <div class="border"></div>
+  </div>  
+  
   <form id="contactForm" onsubmit="return sendMail(this);" class="contact-form">
     
       <label for="name"></label>
@@ -196,7 +199,7 @@
   </div> 
 
     <div class="our-location">
-      <p>Building 1 <br> Hudson Park, New York <br> USA </p>
+      <p>Building 1 <br> Hudson Park, <br> New York <br> USA </p>
     </div>
 
   <div id="map"></div>
