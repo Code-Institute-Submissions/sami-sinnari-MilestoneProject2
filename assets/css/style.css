@@ -23,14 +23,11 @@ body{
 }
 
 .navbar{
-  width: 150px;
   height: 70%;
- /* background-color: #3d75eed5; */ 
   background: linear-gradient(
-    rgba(2, 93, 172, 0.952),
-      rgba(2, 76, 141, 0.801),
-      rgba(1, 72, 134, 0.705)
-  );
+   rgba(2, 93, 172, 0.952),
+   rgba(2, 76, 141, 0.801),
+   rgba(1, 72, 134, 0.705));
   position: fixed;
   top: 0;
   right: -300px;
@@ -40,6 +37,7 @@ body{
   z-index: 1;
   border-radius: 50% 0 0 70%;
   transition: right .8s cubic-bezier(0.8, 0, 0, 0.8);
+  font-family: 'Architects Daughter', cursive;
 }
 
 .logo-container img{
@@ -95,7 +93,7 @@ body{
 
 .nav-link{
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
   color: #eee;
   font-weight: 500;
   letter-spacing: 1px;
@@ -107,49 +105,10 @@ body{
   color: yellow;
 }
 
-.banner{
-  position: relative;
-  bottom: 190px;
-  margin-left: 1rem;
-  font-weight: 700;
-}
-
-.banner span{
-  color: #6e6868;
-}
-
-.banner-title{
-  font-size: 50px;
-  color:#00539cff;
-}
-
-.banner .word-four{
-  color: #00539cff;
-}
-
-.word-one{
-  position: relative;
-   right: 10px;
- }
- .word-two{
-  position: relative;
-   left: 20px;
- }
- .word-three{
-  position: relative;
-   right: 10px;
- }
- .word-four{
-  position: relative;
-   left: 25px;
- }
-
 /* ------ About section  ------ */
 
 
-#about-section{
-  padding-top: 3em;
-}
+
 
 .about-subtitle{
   text-align: center;
@@ -177,6 +136,7 @@ body{
   justify-content: center;
   padding: 30px;
   color: #000000;
+  font-family: "Architects Daughter", sans-serif;
 }
 
 .card-section{
@@ -227,6 +187,7 @@ body{
 
 .card-details{
   padding: 20px 10px;
+  font-family: "Architects Daughter", sans-serif;
 }
 
 .card-details>h3{
@@ -268,6 +229,7 @@ body{
   text-align: center;
   padding: 30px;
   font-size: 19px;
+  font-family: "Architects Daughter", sans-serif;
 }
 
 .order-contact{
@@ -348,7 +310,7 @@ body{
   display: flex;
   align-items: center;
   padding: 12px 15px 12px 10px;
-  justify-content: space-between;
+  justify-content: center;
 }
 .preview-box .details .title{
   display: flex;
@@ -408,12 +370,13 @@ body{
   /* ------ Contact section  ------ */
   
   .contact-section{
-    background: url(../images/contact-us.jpeg) no-repeat center;
+    background: url(../images/contact-us.jpeg) no-repeat right;
     background-size: cover;
     width: 100%;
     height: auto;
     padding-top: 20px;
   }
+  
   .contact-section h1{
     text-align: center;
     color: #486581d7;
@@ -439,6 +402,7 @@ body{
     font-size: 15px;
     font-weight: 600;
     transition: 0.5s;
+    font-family: "Architects Daughter", sans-serif;
   }
   
   .contact-form-text:focus{
@@ -482,9 +446,10 @@ body{
       line-height: 40px;
       margin-top: 100px;
       text-align: right;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
       padding: 4px;
+      font-family: "Architects Daughter", sans-serif;
     }
 
 
@@ -536,6 +501,7 @@ body{
       font-size: 17px;
       line-height: 25px;
       color: rgba(73, 70, 70, 0.664);
+      font-family: "Architects Daughter", sans-serif;
     }
 
     .contentform input{
@@ -549,6 +515,7 @@ body{
       border: 1px solid #378bdf;
       border-radius: 4px;
       outline: none;
+      font-family: "Architects Daughter", sans-serif;
     }
 
     .contentform button{
@@ -560,6 +527,7 @@ body{
       font-weight: 500;
       transition: 0.5s ease-in-out;
       border-radius: 8px;
+      font-family: "Architects Daughter", sans-serif;
     }
 
     .contentform button:hover{
@@ -621,6 +589,10 @@ body{
         right: 40px;
       }
 
+      .nav-link{
+        font-size: 18px;
+      }
+
       .close .line-3{
         transform: rotateZ(405deg) translate(-13px, -10px);
       }
@@ -629,13 +601,8 @@ body{
         transform: rotateZ(-405deg) translate(-9px, 7px);
       }
 
-
-      .banner-title{
-        font-size: 80px;
-        position: relative;
-        bottom: 150px;
-        padding-left: 80px;
-        
+      .about-subtitle{
+        padding-top: 100px;
       }
 
       .about-text{
@@ -651,7 +618,18 @@ body{
         place-content: center;
         text-align: center;
         padding: 100px 0;
-    }
+      }
+
+      .card-details > h3 {
+        font-size: 23px;
+        font-weight: 500;
+       }
+    
+       .card-details > p {
+        font-size: 15px;
+        line-height: 30px;
+       }
+    
 
       /* ------ gallery section ------ */
       .gallery .image{
@@ -726,13 +704,6 @@ body{
     left: 100px;
   }
 
-   .banner-title{
-     position: relative;
-     font-size: 100px;
-     bottom: 400px;
-     padding-left: 300px;
-   }
-
    .about-text{
      font-size: 24px;
      word-spacing: 4px;
@@ -749,43 +720,52 @@ body{
     place-content: center;
     text-align: center;
     padding: 100px 0;
-}
+   }
+
+   .card-details > h3 {
+    font-size: 25px;
+    font-weight: 600;
+   }
+
+   .card-details > p {
+    font-size: 20px;
+    line-height: 30px;
+   }
 
    .order-text {
     font-size: 25px;
    }
 
 
-      .gallery .image{
-    padding: 7px;
-     width: calc(100% / 3);
-   }
-    
-   .gallery-section{
-     padding-left: 380px;
-      }
-
-      .contact-section{
-        width: 100%;
-        height: 1000px;
-      }
-    
-      .contact-form {
-        max-width: 600px;
-        padding: 200px 10px;
+  .gallery .image{
+  padding: 7px;
+    width: calc(100% / 3);
+  }
+  
+  .gallery-section{
+    padding-left: 380px;
     }
 
-    #map{
-      width: 100%;
-      height: 300px;
-    }
+  .contact-section{
+    width: 100%;
+    height: 1000px;
+  }
 
-    .our-location p{
-      line-height: 50px;
-      margin: 30px;
-      font-size: 20px;
-      padding: 10px;
-    }
+  .contact-form {
+    max-width: 600px;
+  }
 
-    }  
+  #map{
+    width: 100%;
+    height: 300px;
+  }
+
+  .our-location p{
+    line-height: 50px;
+    margin: 30px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  }  
     

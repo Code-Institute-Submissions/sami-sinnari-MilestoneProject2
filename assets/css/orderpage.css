@@ -40,14 +40,11 @@
   }
   
   .navbar{
-    width: 150px;
     height: 70%;
-   /* background-color: #3d75eed5; */ 
     background: linear-gradient(
-      rgba(2, 93, 172, 0.952),
-        rgba(2, 76, 141, 0.801),
-        rgba(1, 72, 134, 0.705)
-    );
+     rgba(2, 93, 172, 0.952),
+     rgba(2, 76, 141, 0.801),
+     rgba(1, 72, 134, 0.705));
     position: fixed;
     top: 0;
     right: -300px;
@@ -57,6 +54,7 @@
     z-index: 1;
     border-radius: 50% 0 0 70%;
     transition: right .8s cubic-bezier(0.8, 0, 0, 0.8);
+    font-family: 'Architects Daughter', cursive;
   }
   
   .logo-container img{
@@ -112,12 +110,13 @@
   
   .nav-link{
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     color: #eee;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 3px 0;
+    font-family: 'Architects Daughter', cursive;
   }
   
   
@@ -172,6 +171,8 @@
     visibility: hidden;
     transition: all 300ms ease-in-out;
   }
+
+
   
   .fa-cart-arrow-down{
     font-size: 30px;
@@ -338,7 +339,8 @@
   }
 
   .spec-p{
-    font-size: 15px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 14px;
   }
   
   .btn {
