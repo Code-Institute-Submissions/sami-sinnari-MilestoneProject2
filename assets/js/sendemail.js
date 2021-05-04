@@ -18,3 +18,22 @@ function sendMail(contactForm) {
             document.getElementById('contactForm').reset();
     return false;
 }
+
+
+function sendSubscribtionMail(subscribeForm) {
+    emailjs.send("sami", "Subscribe", {
+        "from_name": subscribeForm.name.value,
+        "from_email": subscribeForm.email.value,
+    })
+        .then(
+            function () {
+                let sentButton = document.getElementById('submit-btn-subscribe');
+                sentButton.style.backgroundColor = "green";
+                sentButton.innerHTML = "Subscribed :)";
+            },
+            function (error) {
+                alert("Sorry, it seems we have a problem. Please fill out the form and Submit again", error);
+            });
+            document.getElementById('subscribeForm').reset();
+    return false;
+}
