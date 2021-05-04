@@ -1,3 +1,5 @@
+// See credits section in README.md for more info. Code was self-thought thru various sites and guides.
+
 let productDOM = document.querySelector(".product__center");
 
 let cartDOM = document.querySelector(".cart");
@@ -17,11 +19,9 @@ let clearCartBtn = document.querySelector(".clear__cart");
 let itemTotals = document.querySelector(".item__total");
 
 
-
 let cart = [];
 
 let buttonDOM = [];
-
 
 
 
@@ -54,7 +54,7 @@ class UI {
 
   
 
-  orderButtons() {
+  orderButtons() { // this code is focused on the button Add to cart. When item is in the cart, words will change to "In Cart"
     let buttons = [...document.querySelectorAll(".addToCart")];
     buttonDOM = buttons;
     buttons.forEach(button => {
@@ -73,7 +73,7 @@ class UI {
         e.target.innerHTML = "In Cart";
         e.target.disabled = true;
 
-        let cartItem = { ...Storage.getProduct(id), amount: 1 };
+        let cartItem = { ...Storage.getProduct(id), amount: 1 }; // will add products in the cart only once.
 
         // this will add product to the cart 
         cart = [...cart, cartItem];
@@ -89,7 +89,7 @@ class UI {
     });
   }
 
-  setItemValues(cart) {
+  setItemValues(cart) { // with this code price will be calculated based on the amount of products.
 
     let tempTotal = 0;
     let itemTotal = 0;
@@ -105,7 +105,7 @@ class UI {
   }
 
 
-  addCartItem({ image, price, title, id }) {
+  addCartItem({ image, price, title, id }) { // This code will focus on cart navigation, more specifically : Increase, decrease and remove.
 
     let div = document.createElement("div");
     div.classList.add("cart__item");
@@ -136,13 +136,13 @@ class UI {
 
 
 
-  show() {
-    cartDOM.classList.add("show");
+  show() { // show will display the cart. Implemted in setAPP
+    cartDOM.classList.add("show"); 
     overlay.classList.add("show");
   }
 
 
-  hide() {
+  hide() { // hide will remove the cart once closed. Implemted in setAPP
     cartDOM.classList.remove("show");
     overlay.classList.remove("show");
   }
@@ -163,16 +163,15 @@ class UI {
 
   cartLogic() {
 
-    clearCartBtn.addEventListener("click", () => {
-      
+    clearCartBtn.addEventListener("click", () => { 
       this.clearCart();
       this.hide();
     });
 
 
-    cartContent.addEventListener("click", e => {
+    cartContent.addEventListener("click", e => { // this will make trash icon usable in order to delete the product. Moreover, the amount of products will be stored.
       let target = e.target.closest("span");
-      let targetElement = target.classList.contains("remove__item");
+      let targetElement = target.classList.contains("remove__item"); 
       if (!target) return;
 
       if (targetElement) {
@@ -209,7 +208,7 @@ class UI {
     });
   }
 
-  clearCart() {
+  clearCart() { // this code will clear the cart and close it once button is pressed.
 
     let cartItems = cart.map(item => item.id);
     cartItems.forEach(id => this.removeItem(id));
@@ -226,8 +225,8 @@ class UI {
     Storage.saveCart(cart);
 
 
-    let button = this.singleButton(id);
-    button.disabled = false;
+    let button = this.singleButton(id); // reset on "Add to Cart" button, after product has been removed from the cart
+    button.disabled = false; 
     button.innerText = "Add to Cart";
   }
 
@@ -237,7 +236,7 @@ class UI {
 }
 
 
-class Products {
+class Products { // fetching from json file
   async getProducts() {
 
     try {
