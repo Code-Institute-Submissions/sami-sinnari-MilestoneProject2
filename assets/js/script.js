@@ -1,5 +1,5 @@
 
-/*    NAVBAR    */
+// Navbar
 
 const navbarToggler = document.querySelector (".hamburger-menu");
 
