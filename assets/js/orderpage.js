@@ -106,7 +106,7 @@ class UI {
   }
 
 
-  addCartItem({ image, price, title, id }) { // This code will focus on cart navigation, more specifically : Increase, decrease and remove.
+  addCartItem({ image, price, title, id }) { // This will focus on cart navigation, more specifically : Increase, decrease and remove.
 
     let div = document.createElement("div");
     div.classList.add("cart__item");
