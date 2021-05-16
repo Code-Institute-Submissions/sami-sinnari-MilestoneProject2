@@ -28,7 +28,7 @@ let buttonDOM = [];
 class UI {
   displayProducts(products) {
     let results = "";
-    products.forEach(({ title, specs1, specs2, specs3, price, image, id })=>{
+    products.forEach(({ title, title2, specs1, specs2, specs3, price, image, id })=>{
       //div class "product" was firstly created in orderpage.html file, then inserted here.
 
       results += ` 
@@ -38,6 +38,7 @@ class UI {
         </div>
         <div class="product__footer">
           <h1>${title}</h1>
+          <h1>${title2}</h1>
           <p class="spec-p">${specs1}</p>
           <p class="spec-p">${specs2}</p>
           <p class="spec-p">${specs3}</p>
@@ -169,7 +170,7 @@ class UI {
     });
 
 
-    cartContent.addEventListener("click", e => { // this will make trash icon usable in order to delete the product. Moreover, the amount of products will be stored.
+    cartContent.addEventListener("click", e => { // this will make trash icon usable in order to delete the product, as well as increase and decrease icons. Moreover, the amount of products will be stored.
       let target = e.target.closest("span");
       let targetElement = target.classList.contains("remove__item"); 
       if (!target) return;

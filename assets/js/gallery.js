@@ -4,11 +4,11 @@
 // Gallery code was thought by Youtube Tutorials, link : https://www.youtube.com/watch?v=dkLpo4shS6c&t=4611s
 
 let gallery  = document.querySelectorAll(".image"),
-previewBox = document.querySelector(".preview-box"),
+previewBox = document.querySelector(".preview_box"),
 previewImg = previewBox.querySelector("img"),
 closeIcon = previewBox.querySelector(".icon"),
-currentImg = previewBox.querySelector(".current-img"),
-totalImg = previewBox.querySelector(".total-img"),
+currentImg = previewBox.querySelector(".current_img"),
+totalImg = previewBox.querySelector(".total_img"),
 shadow = document.querySelector(".shadow");
 
 window.onload = ()=>{
