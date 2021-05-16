@@ -5,20 +5,20 @@
 }
 
 body{
-  font-family: "Fredericka the great", sans-serif;
+  font-family: 'Rokkitt', serif;
 }
 
 
 /* ------ NAVBAR  ------ */
 
-.img-background{
+.img_background{
   width: 100%;
   position: relative;
   top: 100px;
   z-index: -1;
 }
 
-.nav-container{
+.nav_container{
   height: 60vh;
 }
 
@@ -40,7 +40,7 @@ body{
   font-family: 'Architects Daughter', cursive;
 }
 
-.logo-container img{
+.logo_container img{
   height: 100px;
   padding: 10px 30px 0 15px;
   float: left;
@@ -82,16 +82,16 @@ body{
   transform: rotateZ(405deg) translate(-8px, -6px);
 }
 
-.nav-list{
+.nav_list{
   text-align: right;
 }
 
-.nav-items{
+.nav_items{
   list-style: none;
   margin: 25px;
 }
 
-.nav-link{
+.nav_links{
   text-decoration: none;
   font-size: 14px;
   color: #eee;
@@ -110,10 +110,17 @@ body{
 
 
 
-.about-subtitle{
+.about_subtitle{
+  padding-top: 5em;
   text-align: center;
   font-size: 27px;
-  padding-top: 80px;
+  color:#486581d7;
+}
+
+.about_section_title{
+  padding-top: 5em;
+  text-align: center;
+  font-size: 27px;
   color:#486581d7;
 }
 
@@ -126,12 +133,9 @@ body{
 
 
 
-.about-us{
-  text-align: center;
-  justify-content: center;
-}
 
-.about-text{
+
+.about_text{
   text-align: center;
   justify-content: center;
   padding: 30px;
@@ -139,7 +143,7 @@ body{
   font-family: "Architects Daughter", sans-serif;
 }
 
-.card-section{
+.card_section{
   display: grid;
   place-items: center center;
   grid-template-columns: repeat(auto-fit,
@@ -158,12 +162,12 @@ body{
   border: 3px solid #00539cff;
 }
 
-.card-container{
+.card_container{
   position: relative;
   clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
 }
 
-.card-container img{
+.card_container img{
   width: 100%;
   z-index: -1;
   /* Change the height according to media queries*/
@@ -173,7 +177,7 @@ body{
   border: 3px ridge rgba(110, 152, 231, 0.637);
 }
 
-.card-container:after{
+.card_container:after{
   content: '';
   height: 100%;
   width: 100%;
@@ -185,19 +189,19 @@ body{
 }
 
 
-.card-details{
+.card_details{
   padding: 20px 10px;
   font-family: "Architects Daughter", sans-serif;
 }
 
-.card-details>h3{
+.card_details>h3{
   color: #fff;
   font-weight: 600;
   font-size: 18px;
   margin: 10px 0 15px 0;
 }
 
-.card-details>p{
+.card_details>p{
   color: #ffffff;
   font-size: 15px;
   line-height: 30px;
@@ -252,8 +256,7 @@ body{
   color: #fff;
   background: #007bff;
 }
-.gallery-section{
-  
+.gallery_section{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +288,7 @@ body{
   transform: scale(1.1);
 }
 
-.preview-box{
+.preview_box{
   position: fixed;
   top: 50%;
   left: 50%;
@@ -300,19 +303,19 @@ body{
   padding: 0 5px 5px 5px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
 }
-.preview-box.show{
+.preview_box.show{
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.3s ease;
 }
-.preview-box .details{
+.preview_box .details{
   display: flex;
   align-items: center;
   padding: 12px 15px 12px 10px;
   justify-content: center;
 }
-.preview-box .details .title{
+.preview_box .details .title{
   display: flex;
   font-size: 18px;
   font-weight: 400;
@@ -320,7 +323,7 @@ body{
 .details .title p{
   margin: 0 5px;
 }
-.details .title p.current-img{
+.details .title p.current_img{
   font-weight: 500;
 }
 .details .icon{
@@ -328,12 +331,12 @@ body{
   font-size: 20px;
   cursor: pointer;
 }
-.preview-box .image-box{
+.preview_box .image_box{
   display: flex;
   width: 100%;
   position: relative;
 }
-.image-box .slide{
+.image_box .slide{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -352,7 +355,7 @@ body{
 .slide.next{
   right: 0px;
 }
-.image-box img{
+.image_box img{
   width: 100%;
   border-radius: 0 0 3px 3px;
 }
@@ -369,7 +372,7 @@ body{
 
   /* ------ Contact section  ------ */
   
-  .contact-section{
+  .contact_section{
     background: url(../images/contact-us.jpeg) no-repeat right;
     background-size: cover;
     width: 100%;
@@ -377,19 +380,19 @@ body{
     padding-top: 20px;
   }
   
-  .contact-section h1{
+  .contact_section h1{
     text-align: center;
     color: #486581d7;
   }
   
-  .contact-form{
+  .contact_form{
     max-width: 600px;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
   }
   
-  .contact-form-text{
+  .contact_form_text{
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -405,16 +408,16 @@ body{
     font-family: "Architects Daughter", sans-serif;
   }
   
-  .contact-form-text:focus{
+  .contact_form_text:focus{
     box-shadow: 0 0 10px 4px #378bdf;
   }
 
-  textarea.contact-form-text{
+  textarea.contact_form_text{
     resize: none;
     height: 140px;
   }
 
-  .contact-form-btn{
+  .contact_form_btn{
   font-size: 18px;
   color: #fdfdfd;
   background: #486581d7;
@@ -427,7 +430,7 @@ body{
   border-radius: 8px;
   }
 
-  .contact-form-btn:hover{
+  .contact_form-btn:hover{
     background: rgb(35, 71, 187);
       color: #dce2e9;
   }
@@ -441,7 +444,7 @@ body{
       height: 300px;
     }
 
-    .our-location p{
+    .our_location p{
       float: left;
       line-height: 40px;
       margin-top: 100px;
@@ -535,21 +538,21 @@ body{
       color: #dce2e9;
     }
 
-    .social-icons{
+    .social_icons{
       text-align: center;
     }
 
-    .social-icons ul li{
+    .social_icons ul li{
       list-style: none;
       display: inline-block;
     }
     
-    .social-icons ul li a{
+    .social_icons ul li a{
       padding: 8px;
       color: #378bdf;
     }
 
-    .social-icons ul li a span:hover{
+    .social_icons ul li a span:hover{
       color: #6e6868;
       transition: 0.5s ease-in-out;
     }
@@ -565,13 +568,13 @@ body{
     @media(min-width: 758px){
 
       /* --- Logo section --- */
-      .logo-container img{
+      .logo_container img{
         height: 150px;
         padding: 10px 30px 0 30px;
         float: left;   
       }
 
-      .img-background{
+      .img_background{
         width: 100%;
         position: relative;
         top: 100px;
@@ -589,7 +592,7 @@ body{
         right: 40px;
       }
 
-      .nav-link{
+      .nav_links{
         font-size: 18px;
       }
 
@@ -601,17 +604,21 @@ body{
         transform: rotateZ(-405deg) translate(-9px, 7px);
       }
 
-      .about-subtitle{
-        padding-top: 100px;
+      .about_subtitle{
+        padding-top: 8em;
+       }
+
+       .about_section_title{
+        padding-top: 8em;
       }
 
-      .about-text{
+      .about_text{
         padding: 40px;
         color: #000000;
         font-size: 20px;
       }
 
-      .card-section{
+      .card_section{
         display: grid;
         grid-template-columns: repeat(2, 320px);
         grid-gap: 50px;
@@ -620,12 +627,12 @@ body{
         padding: 100px 0;
       }
 
-      .card-details > h3 {
+      .card_details > h3 {
         font-size: 23px;
         font-weight: 500;
        }
     
-       .card-details > p {
+       .card_details > p {
         font-size: 15px;
         line-height: 30px;
        }
@@ -636,7 +643,7 @@ body{
         width: calc(100% / 2);
       }
 
-      .gallery-section{
+      .gallery_section{
         padding-left: 250px;
       }
 
@@ -645,7 +652,7 @@ body{
         width: 767px;
         height: 300px;
       }
-      .our-location p{
+      .our_location p{
         float: none;
        padding: 9px;
        line-height: 40px;
@@ -661,7 +668,7 @@ body{
 
     @media(min-width: 1024px){
 
-   .logo-container img{
+   .logo_container img{
       height: 150px;
        padding: 10px 30px 0 50px;
      /* float: left; */
@@ -682,38 +689,47 @@ body{
      height: 90%;
    }
 
-   .nav-link {
+   .nav_links {
     font-size: 25px;
     font-weight: 500;
     letter-spacing: 2px;
     padding: 5px 0;
    }
 
-   .nav-link:hover{
+   .nav_links:hover{
      color: rgba(3, 3, 3, 0.685);
    }
 
 
-   .nav-container {
+   .nav_container {
     height: 80vh;
    }
 
-   .img-background{
+   .img_background{
     width: 80%;
     top: 150px;
     left: 100px;
   }
 
-   .about-text{
+   .about_text{
      font-size: 24px;
      word-spacing: 4px;
    }
 
-   .about-subtitle{
+   #about-section{
+    padding-top: 10em;
+   }
+
+   .about_subtitle{
      font-size: 40px;
    }
 
-   .card-section{
+   .about_section_title{
+    padding-top: 14em;
+    font-size: 40px;
+  }
+
+   .card_section{
     display: grid;
     grid-template-columns: repeat(2, 480px);
     grid-gap: 70px;
@@ -722,12 +738,12 @@ body{
     padding: 100px 0;
    }
 
-   .card-details > h3 {
+   .card_details > h3 {
     font-size: 25px;
     font-weight: 600;
    }
 
-   .card-details > p {
+   .card_details > p {
     font-size: 20px;
     line-height: 30px;
    }
@@ -742,16 +758,23 @@ body{
     width: calc(100% / 3);
   }
   
-  .gallery-section{
+  .gallery_section{
     padding-left: 380px;
     }
 
-  .contact-section{
+  .contact_section_title{
+    padding-top: 4em;
+    text-align: center;
+    font-size: 40px;
+    color:#486581d7;
+  }
+
+  .contact_section{
     width: 100%;
     height: 1000px;
   }
 
-  .contact-form {
+  .contact_form {
     max-width: 600px;
   }
 
@@ -760,7 +783,7 @@ body{
     height: 300px;
   }
 
-  .our-location p{
+  .our_location p{
     line-height: 50px;
     margin: 30px;
     font-size: 20px;

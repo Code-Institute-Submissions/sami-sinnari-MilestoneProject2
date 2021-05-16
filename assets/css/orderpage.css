@@ -1,7 +1,7 @@
 
   body {
     font-size: 17px;
-    font-family: "Fredericka the great", sans-serif;
+    font-family: 'Rokkitt', serif;
   }
   
     html {
@@ -341,6 +341,7 @@
   .spec-p{
     font-family: 'Architects Daughter', cursive;
     font-size: 14px;
+    font-weight: 700;
   }
   
   .btn {
@@ -494,10 +495,19 @@
       font-size: 1.5em;
     }
 
+    .product__footer h1 {
+      font-size: 2.6rem;
+    }
+
 
     .cart__item img {
       width: 10rem;
       height: 10rem;
+    }
+
+    .cart__footer h3 {
+      font-size: 2.9rem;
+      font-weight: 700;
     }
 
     .product__center {
@@ -506,6 +516,11 @@
     }
 
     .spec-p{
-      font-size: 20px;
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+
+    .price {
+      font-size: 2.5rem;
     }
  }
