@@ -2,118 +2,130 @@
     "status": "success",
     "items": [{
             "id": 1,
-            "title": "Madd AMD Build",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 1079,
-            "image": "./assets/images/pc-pic-1.jpg"
+            "title2": "AMD",
+            "title": "Punch Technology Custom",
+            "specs1": "CPU : Ryzen 7-5800X",
+            "specs2": "RAM: 16GB / Storage: 2TB HDD & 256 GB SSD",
+            "specs3": "Graphics: GeForce RTX 3060",
+            "price": 1760.63,
+            "image": "assets/images/pc-pic-1.jpg"
         },
         {
             "id": 2,
-            "title": "Acer Predator 2021",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 950,
-            "image": "./assets/images/pc-pic-7.jpg"
+            "title2": "Intel",
+            "title": "Medion Erazer X30",
+            "specs1": "CPU : Intel Core i5-8400",
+            "specs2": "RAM: 16GB / Storage: 1TB HDD & 156 GB SSD",
+            "specs3": "Graphics: GTX 1060",
+            "price": 1044.99,
+            "image": "assets/images/pc-pic-2.jpg"
         },
         {
             "id": 3,
-            "title": "PCS Fnatic Build",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 750,
-            "image": "./assets/images/pc-pic-3.jpg"
+            "title2": "AMD",
+            "title": "Fnatic Build PCS",
+            "specs1": "CPU : Ryzen 7 3700X",
+            "specs2": "RAM: 16GB / Storage: 3TB HDD & 500 GB SSD",
+            "specs3": "Graphics: Radeon RX 5700 XT",
+            "price": 2000.00,
+            "image": "assets/images/pc-pic-3.jpg"
         },
         {
             "id": 4,
-            "title": "Omen Nexus 2",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 999,
-            "image": "./assets/images/pc-pic-4.jpg"
+            "title2": "Intel",
+            "title": "HP OMEN 30L",
+            "specs1": "CPU : Intel Core i9-10400F",
+            "specs2": "RAM: 8GB / Storage: 1TB HDD & 256 GB SSD",
+            "specs3": "Graphics: GeForce GTX 1880ti Super 6 GB",
+            "price": 1919.00,
+            "image": "assets/images/pc-pic-4.jpg"
         },
         {
             "id": 5,
-            "title": "Zomexx Build",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 250,
-            "image": "./assets/images/pc-pic-5.jpg"
+            "title2": "Intel",
+            "title": "StormForce Tornado",
+            "specs1": "CPU : Intel Core i7-9700K",
+            "specs2": "RAM: 8GB / Storage: 1TB HDD & 128 GB SSD",
+            "specs3": "Graphics: GeForce GTX 1060 3 GB",
+            "price": 1890.00,
+            "image": "assets/images/pc-pic-5.jpg"
 
         },
         {
             "id": 6,
-            "title": "MSI Trident 2",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 850,
-            "image": "./assets/images/pc-pic-6.jpg"
+            "title2": "Intel",
+            "title": "MSI MEG Trident X ",
+            "specs1": "CPU : Intel Core i9-10900K",
+            "specs2": "RAM: 64GB / Storage: 2TB HDD & 2 TB SSD",
+            "specs3": "Graphics: NVIDIA GeForce RTX 2080 Ti 11 GB",
+            "price": 3500.00,
+            "image": "assets/images/pc-pic-6.jpg"
 
         },
         {
             "id": 7,
-            "title": "Acer Predator 2021",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 600,
-            "image": "./assets/images/pc-pic-7.jpg"
+            "title2": "AMD",
+            "title": "Acer Turbo T50-110",
+            "specs1": "CPU : Ryzen 5 3500",
+            "specs2": "RAM: 8GB / Storage: 1TB HDD & 128 GB SSD",
+            "specs3": "Graphics: GeForce GTX 1650 4 GB",
+            "price": 789.84,
+            "image": "assets/images/pc-pic-7.jpg"
         },
         {
             "id": 8,
-            "title": "Acer Predator 2021",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 999,
-            "image": "./assets/images/pc-pic-4.jpg"
+            "title2": "Intel",
+            "title": "MEDION Akoya P67064",
+            "specs1": "CPU : Core i5-10400",
+            "specs2": "RAM: 16GB / Storage: 1TB HDD & 1 GB SSD",
+            "specs3": "Graphics: GeForce GTX 1660 Super",
+            "price": 972.82,
+            "image": "assets/images/pc-pic-8.jpg"
         },
         {
             "id": 9,
-            "title": "Acer Predator 2021",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 250,
-            "image": "./assets/images/pc-pic-5.jpg"
+            "title2": "AMD",
+            "title": "Punch Technology - GDT",
+            "specs1": "CPU : Ryzen 5 5600X",
+            "specs2": "RAM: 16GB / Storage: 1TB HDD & 1 GB SSD",
+            "specs3": "Graphics: GeForce RTX 3060",
+            "price": 1482.10,
+            "image": "assets/images/pc-pic-9.jpg"
 
         },
         {
             "id": 10,
-            "title": "Acer Predator 2021",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 850,
-            "image": "./assets/images/pc-pic-6.jpg"
+            "title2": "Intel",
+            "title": "Acer Nitro N50-610",
+            "specs1": "CPU : Core i9-10850K",
+            "specs2": "RAM: 32GB / Storage: 3TB HDD & 2 GB SSD",
+            "specs3": "Graphics: NVIDIA GeForce GTX 2080 Ti 11 GB",
+            "price": 2600.00,
+            "image": "assets/images/pc-pic-10.jpg"
 
         } 
         ,
         {
             "id": 11,
-            "title": "Acer Predator 2021",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 1850,
-            "image": "./assets/images/pc-pic-3.jpg"
+            "title2": "Intel",
+            "title": "PT Cougar Mini",
+            "specs1": "CPU : Core i3-10100F",
+            "specs2": "RAM: 8GB / Storage: 1TB HDD & 128 GB SSD",
+            "specs3": "Graphics: GeForce GTX 1650 4GB",
+            "price": 850.00,
+            "image": "assets/images/pc-pic-11.jpg"
 
         }
         ,
         {
             "id": 12,
-            "title": "Acer Predator 2021",
-            "specs1": "Intel Core i5-10400F Processor",
-            "specs2": "RAM: 8GB / Storage: 2TB HDD & 256 GB SSD",
-            "specs3": "Graphics: NVIDIA GeForce GTX 1660 Super 6 GB",
-            "price": 1230,
-            "image": "./assets/images/pc-pic-4.jpg"
+            "title2": "Intel",
+            "title": "Acer Strix GL10",
+            "specs1": "CPU : Core i7-9700K",
+            "specs2": "RAM: 16GB / Storage: 1TB HDD & 256 GB SSD",
+            "specs3": "Graphics: GeForce RTX 2070",
+            "price": 2151.87,
+            "image": "assets/images/pc-pic-12.jpg"
 
         }      
     ]
