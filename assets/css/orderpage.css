@@ -35,91 +35,92 @@
   }
  
  /* ------ NAVBAR ------ */
-  .nav-container{
-    height: 15vh;
-  }
-  
-  .navbar{
-    height: 70%;
-    background: linear-gradient(
-     rgba(2, 93, 172, 0.952),
-     rgba(2, 76, 141, 0.801),
-     rgba(1, 72, 134, 0.705));
-    position: fixed;
-    top: 0;
-    right: -300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    border-radius: 50% 0 0 70%;
-    transition: right .8s cubic-bezier(0.8, 0, 0, 0.8);
-    font-family: 'Architects Daughter', cursive;
-  }
-  
-  .logo-container img{
-    height: 100px;
-    padding: 2px 30px 0 7px;
-    float: left;
-  
-  }
-  
-  .close{
-    right: 0;
-  }
-  
-  .hamburger-menu{
-    width: 35px;
-    height: 30px;
-    position: fixed;
-    top: 50px;
-    right: 30px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  .line {
-    width: 100%;
-    height: 3px;
-    background-color: #aca5a5;
-    transition: all 0.8s;
-  }
-  
-  .close .line-1{
-    transform: rotateZ(-405deg) translate(-8px, 6px);
-  }
-  
-  .close .line-2{
-    opacity: 0;
-  }
-  
-  .close .line-3{
-    transform: rotateZ(405deg) translate(-8px, -6px);
-  }
-  
-  .nav-list{
-    text-align: right;
-  }
-  
-  .nav-items{
-    list-style: none;
-    margin: 25px;
-  }
-  
-  .nav-link{
-    text-decoration: none;
-    font-size: 14px;
-    color: #eee;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 3px 0;
-    font-family: 'Architects Daughter', cursive;
-  }
-  
-  
+
+.navbar{
+  height: 70%;
+  width: 200px;
+  height: 70%;
+  background: linear-gradient(
+   rgba(2, 93, 172, 0.952),
+   rgba(2, 76, 141, 0.801),
+   rgba(1, 72, 134, 0.705));
+  position: fixed;
+  top: 0;
+  right: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 50% 0 0 70%;
+  transition: right .8s cubic-bezier(0.8, 0, 0, 0.8);
+  font-family: 'Architects Daughter', cursive;
+}
+
+.logo_container img{
+  height: 100px;
+  padding: 8px 0px 25px 10px;
+  float: left;
+}
+
+.close{
+  right: 0;
+}
+
+.hamburger_menu{
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #aca5a5;
+  transition: all 0.8s;
+}
+
+.close .line_1{
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.close .line_2{
+  opacity: 0;
+}
+
+.close .line_3{
+  transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav_list{
+  text-align: right;
+}
+
+.nav_items{
+  list-style: none;
+  margin: 25px;
+}
+
+.nav_links{
+  font-family: 'Rokkitt', serif;
+  text-decoration: none;
+  font-size: 17px;
+  color: #eee;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 0;
+}
+
+.nav_links:hover{
+  color: rgba(3, 3, 3, 0.685);
+}
+
    /* ------ Cart ------ */
   
   .cart__icon {
@@ -376,11 +377,11 @@
  
   @media(min-width: 758px){
 
-    .logo-container img{
+    .logo_container img{
       height: 150px;
-      padding: 2px 30px 0 24px;
-      float: left;
-      }
+      padding: 10px 30px 0 30px;
+      float: left;   
+    }
 
     .container {
       padding: 0 5rem;
@@ -394,11 +395,15 @@
     }
 
     .navbar{
-      width: 180px;
+      width: 270px;
       height: 60%;
     }
 
-    .hamburger-menu{
+    .nav_links{
+      font-size: 20px;
+    }
+
+    .hamburger_menu{
       width: 40px;
       height: 40px;
       right: 40px;
@@ -408,11 +413,11 @@
       font-size: 1.3em;
     }
 
-    .close .line-3{
+    .close .line-_{
       transform: rotateZ(405deg) translate(-13px, -10px);
     }
 
-    .close .line-1{
+    .close .line_1{
       transform: rotateZ(-405deg) translate(-9px, 7px);
     }
 
@@ -448,20 +453,20 @@
       width: 60%;
       height: 70%;
     }
-    .logo-container img{
+    .logo_container img{
     height: 150px;
     padding: 2px 30px 0 42px;
     float: left;
     }
 
-    .hamburger-menu {
+    .hamburger_menu {
     width: 50px;
     height: 50px;
     }
 
 
-    .close .line-1 {
-    transform: rotateZ(-405deg) translate(-13px, 11px);
+    .close .line_1 {
+    transform: rotateZ(-405deg) translate(-17px, 15px);
     }
 
     .navbar {
@@ -469,21 +474,15 @@
     height: 90%;
      }
 
-    .nav-link {
+    .nav_links {
     font-size: 25px;
     font-weight: 500;
     letter-spacing: 2px;
     padding: 5px 0;
     }
 
-    .nav-link:hover{
+    .nav_link:hover{
       color: rgba(3, 3, 3, 0.685);
-    }
-
-    .img-background{
-      width: 80%;
-      top: 150px;
-      left: 100px;
     }
     
     .nav_wrapper{
