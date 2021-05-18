@@ -3,8 +3,11 @@
 
  PCbuilds is a company dedicated to production of newest gaming PC's.
 
-![Am-I-Responsive](assets/images/am-i-responsive.jpg)     < picture here>
+![Am-I-Responsive](/assets/images/am-i-responsive.jpg)  
 
+The image above is a screenshot from [Am I Responsive](http://ami.responsivedesign.is/#)
+
+A demo of the website can be found here [sami-sinnari.github.io/MilestoneProject2/](https://sami-sinnari.github.io/MilestoneProject2/)
 
 ## Contents
 
@@ -74,11 +77,22 @@
 
 #### Typography
 
- In process ...
+ > - I have used two fonts from [Google Fonts](https://fonts.google.com/) on the website. 
+ > 1. Rokkitt (fall-back font Serif) - The Standard attractive look of the font was used in headings and Order Page layout, as in my opinion it fits perfectly to achive a professional lok.
+ > 2. Architects Daughter (fall-back font Serif) - Not so standard look was chosen as it gives a nice balanced diversity on the website.
 
 ### Wireframes
 
- In process ...
+#### Mobile view
+
+>- [Front Page](https://github.com/sami-sinnari/MilestoneProject2/blob/master/assets/wireframes/website-mobile.pdf)    
+>- [Order Page](https://github.com/sami-sinnari/MilestoneProject2/blob/master/assets/wireframes/orderpage-mobile.pdf)
+
+#### Desktop view
+
+>- [Front Page](https://github.com/sami-sinnari/MilestoneProject2/blob/master/assets/wireframes/website-desktop.pdf)  
+>- [Order Page](https://github.com/sami-sinnari/MilestoneProject2/blob/master/assets/wireframes/orderpage-desktop.pdf)
+
 
 #### [Back to Contents](#contents)
 
@@ -95,7 +109,6 @@
 
 ### Features Left to Implement when relevant knowledge gained :
 
-> - I would like to connect the **Send** button in Contact Us page and **Subscribe** button in the footer with back-end technologies.
 > - I would like to connect the **Purchase** button in Order Now page with [Stripes](https://stripe.com/docs/connect/creating-a-payments-page) **Crate a payment page**.
 > - I would like to expand the store of this website and add more sections with different IT products and PC connected gadgets.
 
@@ -147,7 +160,7 @@
 > - _"I want to see some of their previous PC designs before ordering"_
 > - **I created the section called "Gallery" in order to prove the customers we are dedicatet in our work.**
 > - _"I want to get in touch with the company because i'd like to add some feature in a PC"_
-> - **I created the section called "Contact Us" so customers can get it touch with us regarding any need.**
+> - **I created the section called "Contact Us" so customers can get it touch with us regarding any need. The 'Send' button is connected with EmailJS so we can receive a message.**
 > - _"I want to be able to subscribe to PCbuilds so I can get update on their future computers."_
 > - **I created the card in the footer where customers can Subscribe to us so they can stay up to date with any news.**
 > - _"I want to be able to join a facebook/instagram or twitter page so I can get to know the company"_
@@ -173,7 +186,7 @@
 > - 3. At the top of the repository, I clicked on the "Settings" button.
 > - 4. On the settings page, I scrolled down to the "GitHub Pages" section.
 > - 5. Under "Source", I selected "Master Branch" from the dropdown menu.
-> - 6. After the page refreshed itself, I scrolled back down to the "GitHub Pages" section to retrive the link to the published  site.
+> - 6. After the page refreshed itself, I scrolled back down to the "GitHub Pages" section to retrive the link to the published site.
 > - The site can be viewed here: .....
 
 ### Making a Local Clone
@@ -204,7 +217,7 @@ git clone https://github.com/sami-sinnari/MilestoneProject2.git
 ### Code
 
 > - Code written in this project is mostly done by the developer. The gallery referance can be found within the code.
-> - The code done on order page has been self - thought by various sources. Please find referances below : 
+> - The code done on order page has been self-thought thru various sources. Please find referances below : 
 > - https://dev.to/wenglin1/simple-shopping-cart-with-js-json-jdp - Devto explanation on how to formate a shopping cart and how to connect it with json. I will mention Devto in acknowledgments.
 > - https://www.youtube.com/watch?v=90PgFUPIybY&t=727s - Code Addict indepth shopping cart creation, with detailed explanation. I will mention Code Addict team in acknowledgments.
 
