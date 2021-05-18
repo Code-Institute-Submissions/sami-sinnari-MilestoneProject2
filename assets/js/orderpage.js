@@ -55,7 +55,7 @@ class UI {
 
   
 
-  orderButtons() { // this code is focused on the button Add to cart. When item is in the cart, words will change to "In Cart"
+  orderButtons() { // this code is focused on the button Add to cart. When item is in the cart, words will change to 'Check' font awsome icon, but once user refreshes the site, it will changed to word 'Added'
     let buttons = [...document.querySelectorAll(".addToCart")];
     buttonDOM = buttons;
     buttons.forEach(button => {
@@ -64,14 +64,14 @@ class UI {
       let inCart = cart.find(item => item.id === parseInt(id, 10));
 
       if (inCart) {
-        button.innerText = "In Cart";
+        button.innerText = 'Added'; 
         button.disabled = true;
       }
 
       button.addEventListener("click", e => {
 
         e.preventDefault();
-        e.target.innerHTML = "In Cart";
+        e.target.innerHTML = 'Added'
         e.target.disabled = true;
 
         let cartItem = { ...Storage.getProduct(id), amount: 1 }; // will add products in the cart only once.
