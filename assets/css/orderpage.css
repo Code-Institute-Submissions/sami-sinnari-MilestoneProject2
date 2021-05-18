@@ -291,7 +291,13 @@
   .products_title{
     padding-top: 9em;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.1em;
+    color:#486581d7;
+  }
+
+  .orderpage_text{
+    text-align: center;
+    font-size: 0.7em;
     color:#486581d7;
   }
 
@@ -339,7 +345,6 @@
   }
 
   .spec-p{
-    font-family: 'Architects Daughter', cursive;
     font-size: 14px;
     font-weight: 700;
   }
@@ -491,6 +496,10 @@
 
     .products_title{
       font-size: 1.5em;
+    }
+
+    .orderpage_text{
+      font-size: 0.9em;
     }
 
     .product__footer h1 {
