@@ -1,7 +1,7 @@
 # PCbuilds
 
 
- PCbuilds is a company ....
+ PCbuilds is a company dedicated to production of newest gaming PC's.
 
 ![Am-I-Responsive](assets/images/am-i-responsive.jpg)     < picture here>
 
@@ -18,7 +18,6 @@
 - [**Features**](#features)
 
   - [Existing Features](#features)
-  - [Features added then removed](#features)
   - [Features Left to Implement](#features)
 
 - [**Technologies**](#technologies-used)
@@ -134,7 +133,12 @@
 ---
 
 ## Testing
-> in process ...
+
+### Code validity
+> - HTML - [W3C](https://validator.w3.org/) - Markup Validation
+> - CSS - [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation
+> - JavaScript - [JSHINT](https://jshint.com/) - Javascript code check
+> - TAGS - [Closing Tag Checker for HTML5](https://www.aliciaramirez.com/closing-tags-checker/) - Validates if all tags are opened and closed correctly.
 
 ### Testing User Stories from UX Section
 
@@ -192,28 +196,31 @@ git clone https://github.com/sami-sinnari/MilestoneProject2.git
 ---
 
 ## Credits
-
-> -In process ...
-
 ### Pictures
 
 > - Pictures used in this project were aquired on [Adobe Stock Images ](https://stock.adobe.com/)
-
-
+> - Favicon : Icon made by Smashicons from [flaticon](www.flaticon.com)
 
 ### Code
 
-> - In process ...
+> - Code written in this project is mostly done by the developer. The gallery referance can be found within the code.
+> - The code done on order page has been self - thought by various sources. Please find referances below : 
+> - https://dev.to/wenglin1/simple-shopping-cart-with-js-json-jdp - Devto explanation on how to formate a shopping cart and how to connect it with json. I will mention Devto in acknowledgments.
+> - https://www.youtube.com/watch?v=90PgFUPIybY&t=727s - Code Addict indepth shopping cart creation, with detailed explanation. I will mention Code Addict team in acknowledgments.
 
 
 ### Content
-> - The content on this site was written by the developer.
+> - The content on this site was partialy written by the developer.
+> - Content Idea was provided by : [WePC](https://www.wepc.com) & [PCSpecialist](https://www.pcspecialist.ie)
 > - The README is based on the Code Institute sample of README file.
 
 
 ### Acknowledgements
-
-> - In process ...
+   I would like to thank the people who have helped me through this project:
+ - My mentor Can Sücüllü for his time, patience, and support during the Project and for all the feedback and advice on this project.
+ - My fellow students at Code Instutite and wonderful Slack community for all the support and feedback.
+ - Amazing YouTube and Stack overflow developer community, especially DevTo and Code Addict as they teached me valuable knowledge in making shopping carts.
+ - Lastly, I'd like to thank Code Institute's Staff for their incredible content which provided me with sufficient knowledge to code this site.
 
 #### [Back to Contents](#contents)
 
