@@ -102,12 +102,12 @@ A demo of the website can be found here [sami-sinnari.github.io/MilestoneProject
 
 ### Existing Features : 
 
-- Navigation : Navigation bar made with JS is designed in a way that it will follow the user where he/she goes. Hamburger menu will slide from right to left with navigation links included. It consists of six links : **Home**, **About Us**, **Gallery**, **Order Now**, **Contact** and **Subscribe**.
-- One-page website with 6 sections and one seperate page for order section.
-- Order page which containes products. Products can be added to the cart and their number can be increased or decreased. The price of the product will change as customer is changing the amount. If customer goes to Home page, products will be saved in the cart as they are stored. JSON used in that section.
--  Footer which containes **Subscribe** card and **Social links**
+- Navigation : Navigation bar made with JS is designed in a way that it will follow the user where he/she goes. Hamburger menu will slide from right to left with navigation links included. It consists of six links : **Home**, **About Us**, **Gallery**, **Order Now**, **Contact**, **Subscribe** and **Purchase**.
+- One-page website with 7 sections and one seperate page for order section.
+- Order page which contains products. Products can be added to the cart and their number can be increased or decreased. The price of the product will change as customer is changing the amount. If customer goes to Home page, products will be saved in the cart as they are stored. JSON used in that section.
+- Footer which containes **Subscribe** card and **Social links**
 
-### Features Left to Implement when relevant knowledge gained :
+### Features Left to Implement when sufficient knowledge is gained :
 
 - I would like to connect the **Purchase** button in Order Now page with [Stripes](https://stripe.com/docs/connect/creating-a-payments-page) **Crate a payment page**.
 - I would like to expand the store of this website and add more sections with different IT products and PC connected gadgets.
@@ -170,7 +170,7 @@ A demo of the website can be found here [sami-sinnari.github.io/MilestoneProject
 
 ### Further Testing
 
-- This website was tested across multiple browsers and devices. On every occasion, the website appered fully functional and without any errors.
+- This website was tested across multiple browsers and devices on many occasions while making it. As the website was finished, it appered fully functional and without any errors.
 
 #### [Back to Contents](#contents)
 
@@ -184,10 +184,10 @@ A demo of the website can be found here [sami-sinnari.github.io/MilestoneProject
 - 1. After pushing the project to GitHub, I opened the GitHub site and logged in.
 - 2. After logging in, I located the repository for the project: [github.com/sami-sinnari/MilestoneProject2](https://github.com/sami-sinnari/MilestoneProject2)
 - 3. At the top of the repository, I clicked on the "Settings" button.
-- 4. On the settings page, I scrolled down to the "GitHub Pages" section.
+- 4. On the settings page, I selected "Pages" section.
 - 5. Under "Source", I selected "Master Branch" from the dropdown menu.
 - 6. After the page refreshed itself, I scrolled back down to the "GitHub Pages" section to retrive the link to the published site.
-- The site can be viewed here: .....
+- The site can be viewed here: https://sami-sinnari.github.io/MilestoneProject2/
 
 ### Making a Local Clone
 
