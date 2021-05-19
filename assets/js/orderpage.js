@@ -18,11 +18,8 @@ let clearCartBtn = document.querySelector(".clear__cart");
 
 let itemTotals = document.querySelector(".item__total");
 
-
 let cart = [];
-
 let buttonDOM = [];
-
 
 
 class UI {
@@ -53,8 +50,6 @@ class UI {
     productDOM.innerHTML = results;
   }
 
-  
-
   orderButtons() { // this code is focused on the button Add to cart. When item is in the cart, words will change to 'Check' font awsome icon, but once user refreshes the site, it will changed to word 'Added'
     let buttons = [...document.querySelectorAll(".addToCart")];
     buttonDOM = buttons;
@@ -79,13 +74,10 @@ class UI {
         // this will add product to the cart 
         cart = [...cart, cartItem];
 
-
         // this will save the cart
-
         Storage.saveCart(cart);
         this.setItemValues(cart);
         this.addCartItem(cartItem);
-
       });
     });
   }
@@ -136,18 +128,15 @@ class UI {
   }
 
 
-
   show() { // show will display the cart. Implemted in setAPP
     cartDOM.classList.add("show"); 
     overlay.classList.add("show");
   }
 
-
   hide() { // hide will remove the cart once closed. Implemted in setAPP
     cartDOM.classList.remove("show");
     overlay.classList.remove("show");
   }
-
 
   setAPP() {
     cart = Storage.getCart();
@@ -210,7 +199,6 @@ class UI {
   }
 
   clearCart() { // this code will clear the cart and close it once button is pressed.
-
     let cartItems = cart.map(item => item.id);
     cartItems.forEach(id => this.removeItem(id));
 
@@ -273,6 +261,7 @@ class Storage {
       : [];
   }
 }
+
 
 document.addEventListener("DOMContentLoaded", async () => {
   let productList = new Products();
