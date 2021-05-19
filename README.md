@@ -1,9 +1,9 @@
 # PCbuilds
 
 
- PCbuilds is a company dedicated to production of newest gaming PC's.
+ PCbuilds is a made up company with focus on selling a top gaming PC's, while at the same time promotes budged friendly offers.
 
-![Am-I-Responsive](/assets/images/am-i-responsive.jpg)  
+  ![Am-I-Responsive](/assets/images/am-i-responsive.jpg)  
 
 The image above is a screenshot from [Am I Responsive](http://ami.responsivedesign.is/#)
 
@@ -44,7 +44,7 @@ A demo of the website can be found here [sami-sinnari.github.io/MilestoneProject
 > - Highlight the main values of our team to convince the customers to buy from us.
 > - Showcase some of our previous PC designs, in order to attract the customer.
 > - Obtaining subscriptions for mailing list, thereby increasing customer databases.
-> - Directions to Facebook, Instagram and Twitter in order to get more customers.
+> - Directions to Facebook, Instagram and Twitter in order to interact more with customers.
 
 ### User Goals 
 
