@@ -1,7 +1,7 @@
 
 /*    GALLERY    */
 
-// Gallery code was thought by Youtube Tutorials, link : https://www.youtube.com/watch?v=dkLpo4shS6c&t=4611s
+// Gallery code was inspired by Youtube Tutorials, link : https://www.youtube.com/watch?v=dkLpo4shS6c&t=4611s
 
 let gallery  = document.querySelectorAll(".image"),
 previewBox = document.querySelector(".preview_box"),

@@ -1,4 +1,4 @@
-
+//This code was thought by CI
 function initMap() {
     let newyork = { lat: 40.86751 , lng: -73.96054 };
     let map = new google.maps.Map(document.getElementById("map"), {

@@ -1,4 +1,7 @@
 // See credits section in README.md for more info. Code was self-thought thru various sites and guides.
+// https://dev.to/wenglin1/simple-shopping-cart-with-js-json-jdp  - The code was partially influenced by devTo
+// https://www.youtube.com/watch?v=90PgFUPIybY&t=727s - The code was heavily infuenced by Code Addict, next to devTo. As mentioned, the way to code the cart was self-thought thru those programmers. 
+// - they will be mentioned in readme.md file at Credits and Acknowledgements sections, as they provided me, the developer, with sufficient knowledge to do this.
 
 let productDOM = document.querySelector(".product__center");
 
